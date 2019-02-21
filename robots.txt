@@ -1,2 +1,18 @@
+﻿User-agent: Yandex
+Allow: /
+Disallow: /catalog
+Disallow: /reviews
+Host: handmade-masters.ru
+Sitemap: http://handmade-masters.ru/sitemap.xml
+
+User-agent: Googlebot
+Allow: /
+Disallow: /catalog
+Disallow: /reviews
+Sitemap: http://handmade-masters.ru/sitemap.xml
+
 User-agent: *
-Disallow: /
+Allow: /
+Disallow: /catalog
+Disallow: /reviews
+Sitemap: http://handmade-masters.ru/sitemap.xml

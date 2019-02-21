@@ -1,0 +1,448 @@
+@media (max-width: 578px) and (min-width: 320px)
+	.header
+		position: relative
+		opacity: 1
+		&-blocks
+			width: 95%
+		&-menu
+			padding-top: 20px
+			display: none
+			top: 0
+			background: #fff
+			width: 100%
+			height: auto
+			position: fixed
+			flex-wrap: wrap
+			justify-content: flex-start
+			opacity: 1
+			z-index: 10
+			&__block1, &__block2, &__block3, &__block4, &__block5
+				margin-left: auto
+				margin-right: auto
+				width: 100%
+				margin-bottom: 15px
+				&:hover
+					cursor: pointer
+				&:hover .header-menu__ref
+					color: #000
+			&__block1
+				&:hover .header-menu__ref
+					color: #b1cc3c
+			&__block3menu
+				left: 0
+				opacity: 1
+				transform: scaleY(1)
+				display: none
+				text-align: center
+				position: relative
+				padding: 5px 0 5px 0
+				width: 100%
+				background: rgba(177, 204, 60, 0.3)
+			&__refmenu
+				&:hover
+					color: #000
+			&__ham
+				display: block
+				z-index: 15
+			&__ref3
+				display: none
+			&__refmobile
+				display: block
+		&-block
+			&__preview
+				flex-wrap: wrap
+				justify-content: center
+			&__logo
+				width: 220px
+			&__company
+				font-size: 14px
+			&__button
+				display: block
+				&:hover
+					background: #fff
+	.window
+		&-offer
+			padding: 15px 10px
+			width: 300px
+			top: 2%
+			&__title
+				margin-bottom: 15px
+				font-size: 20px
+			&__button
+				&:hover
+					background-color: #b1cc3c
+					border: 2px solid #b1cc3c
+			&__small
+				font-size: 12px
+				line-height: 1.4
+	.catalog
+		&-menu
+			display: none
+		&-blocks
+			padding-top: 10px
+			width: 100%
+			flex-wrap: wrap
+		&-title
+			padding-top: 30px
+			&__paint
+				display: none
+		&-products
+			width: 100%
+			&__blocks
+				justify-content: center
+			&__block
+				margin-left: 10px
+				margin-right: 10px
+				&:hover
+					transform: scale(1, 1)
+			&__button
+				&:hover
+					background: #fff
+	.footer
+		&-blocks
+			width: 100%
+			margin-bottom: 15px
+		&-menu
+			display: none
+		&-block
+			&__preview
+				flex-wrap: wrap
+				justify-content: center
+			&__button
+				display: block
+				&:hover
+					background: #fff
+		&-create
+			width: 100%
+			&__block
+				width: 95%
+			&__rel
+				width: 100%
+			&__img
+				margin-bottom: 10px
+				margin-top: 10px
+
+@media (max-width: 500px) and (min-width: 380px)
+	.header
+		padding-bottom: 20px
+		&-block
+			&__preview
+				margin-left: auto
+				margin-right: auto
+				max-width: 300px
+
+@media (max-width: 992px) and (min-width: 579px)
+	.header
+		position: relative
+		opacity: 1
+		&-blocks
+			padding-top: 40px
+			width: 95%
+		&-menu
+			height: 40px
+			padding-top: 0
+			display: flex
+			top: 0
+			background: #fff
+			width: 100%
+			position: fixed
+			flex-wrap: nowrap
+			justify-content: space-between
+			opacity: 1
+			z-index: 10
+			&__block1, &__block2, &__block3, &__block4, &__block5
+				margin-left: auto
+				margin-right: auto
+				margin-bottom: 0
+				display: flex
+				align-items: center
+				height: 40px
+				&:hover
+					cursor: pointer
+				&:hover .header-menu__ref
+					color: #000
+			&__block1
+				&:hover .header-menu__ref
+					color: #b1cc3c
+			&__block3menu
+				left: 0
+				top: 40px
+				opacity: 1
+				transform: scaleY(1)
+				display: none
+				text-align: left
+				position: absolute
+				padding: 5px 0 5px 0
+				width: 200px
+				background: rgba(177, 204, 60, 1)
+			&__refmenu
+				&:hover
+					color: #000
+			&__ham
+				display: none
+				z-index: 15
+			&__ref3
+				display: none
+			&__refmobile
+				display: flex
+				margin-bottom: 0
+				height: auto
+		&-block
+			&__preview
+				flex-wrap: wrap
+				justify-content: center
+			&__logo
+				width: 300px
+			&__company
+				font-size: 16px
+			&__button
+				display: block
+				&:hover
+					background: #fff
+	.window
+		&-offer
+			padding: 15px 10px
+			width: 300px
+			top: 5%
+			&__title
+				margin-bottom: 15px
+				font-size: 20px
+			&__button
+				&:hover
+					background-color: #b1cc3c
+					border: 2px solid #b1cc3c
+			&__small
+				font-size: 12px
+				line-height: 1.4
+	.catalog
+		&-menu
+			display: none
+		&-blocks
+			padding-top: 10px
+			width: 100%
+			flex-wrap: wrap
+		&-title
+			padding-top: 30px
+		&-products
+			margin-left: auto
+			margin-right: auto
+			width: 95%
+			&__blocks
+				justify-content: center
+			&__block
+				margin-left: 10px
+				margin-right: 10px
+				&:hover
+					transform: scale(1, 1)
+			&__button
+				&:hover
+					background: #fff
+	.footer
+		&-blocks
+			width: 100%
+		&-menu
+			display: none
+		&-block
+			&__preview
+				flex-wrap: wrap
+				justify-content: center
+			&__button
+				display: block
+				&:hover
+					background: #fff
+
+@media (max-width: 992px) and (min-width: 769px)
+	.header
+		&-block
+			&__logo
+				width: 400px
+
+@media (max-width: 1023px) and (min-width: 993px)
+	.header
+		position: relative
+		opacity: 1
+		&-blocks
+			padding-top: 40px
+			width: 95%
+		&-menu
+			height: 40px
+			padding-top: 0
+			display: flex
+			top: 0
+			background: #fff
+			width: 100%
+			position: fixed
+			flex-wrap: nowrap
+			justify-content: space-between
+			opacity: 1
+			z-index: 10
+			&__block1, &__block2, &__block3, &__block4, &__block5
+				margin-left: auto
+				margin-right: auto
+				margin-bottom: 0
+				display: flex
+				align-items: center
+				height: 40px
+				&:hover
+					cursor: pointer
+				&:hover .header-menu__ref
+					color: #000
+			&__block1
+				&:hover .header-menu__ref
+					color: #b1cc3c
+			&__block3menu
+				left: 0
+				top: 40px
+				opacity: 1
+				transform: scaleY(1)
+				display: none
+				text-align: left
+				position: absolute
+				padding: 5px 0 5px 0
+				width: 200px
+				background: rgba(177, 204, 60, 1)
+			&__refmenu
+				&:hover
+					color: #000
+			&__ham
+				display: none
+				z-index: 15
+			&__ref3
+				display: none
+			&__refmobile
+				display: flex
+				margin-bottom: 0
+				height: auto
+		&-block
+			&__preview
+				flex-wrap: wrap
+				justify-content: center
+			&__logo
+				width: 500px
+			&__company
+				font-size: 16px
+			&__button
+				display: block
+				&:hover
+					background: #fff
+	.window
+		&-offer
+			top: 3%
+	.catalog
+		&-menu
+			&__block
+				&:hover
+					background: #fff
+					margin-left: 0
+			&__bowtie
+				&:hover
+					background: #b1cc3c
+					margin-left: 20px
+		&-blocks
+			padding-top: 10px
+			width: 95%
+			flex-wrap: wrap
+		&-title
+			padding-top: 50px
+		&-products
+			width: 74%
+			&__blocks
+				justify-content: center
+			&__block
+				margin-left: 10px
+				margin-right: 10px
+				&:hover
+					transform: scale(1, 1)
+			&__button
+				&:hover
+					background: #fff
+	.footer
+		&-blocks
+			width: 100%
+		&-menu
+			display: none
+		&-block
+			&__preview
+				flex-wrap: wrap
+				justify-content: center
+			&__button
+				display: block
+				&:hover
+					background: #fff
+
+@media (max-width: 1200px) and (min-width: 1024px)
+	.header
+		position: relative
+		opacity: 1
+		&-blocks
+			padding-top: 5px
+			width: 95%
+		&-menu
+			width: 580px
+			height: 40px
+			display: flex
+			background: #fff
+			flex-wrap: nowrap
+			justify-content: space-between
+			opacity: 1
+			z-index: 10
+			&__refmenu
+				&:hover
+					color: #000
+			&__ham
+				display: none
+				z-index: 15
+			&__ref3
+			&__refmobile
+				display: none
+		&-block
+			&__preview
+				flex-wrap: wrap
+				justify-content: space-between
+			&__logo
+				width: 220px
+			&__company
+				font-size: 15px
+			&__button
+				display: block
+	.window
+		&-offer
+			top: 2%
+	.catalog
+		&-blocks
+			padding-top: 10px
+			width: 95%
+			flex-wrap: wrap
+		&-title
+			padding-top: 50px
+		&-products
+			width: 74%
+			&__blocks
+				justify-content: center
+			&__block
+				margin-left: 10px
+				margin-right: 10px
+	.footer
+		&-blocks
+			padding-top: 5px
+			width: 95%
+		&-menu
+			width: 580px
+			height: 40px
+			display: flex
+			background: #fff
+			flex-wrap: nowrap
+			justify-content: space-between
+			opacity: 1
+			z-index: 10
+		&-block
+			&__preview
+				flex-wrap: wrap
+				justify-content: space-between
+			&__logo
+				width: 220px
+			&__company
+				font-size: 15px
+			&__button
+				display: block
+		

@@ -1,49 +1,274 @@
 .features
-  width: 100%
-  height: 400px
-  background: #d0d0d0
-  position: relative
-  &-triangle
-    position: absolute
-    bottom: -149px
-    width: 100%
-    height: 150px
-    background: linear-gradient(to right top, transparent 50%, #d0d0d0 50%) left / 50.1% 100% no-repeat, linear-gradient(to left top, transparent 50%, #d0d0d0 50%) right / 50.1% 100% no-repeat
-  &-title
-    padding-top: 50px
-    width: 100%
-    text-align: center
-    font-size: 30px
-    text-transform: uppercase
-    color: #2d2d2d
-  &-block
-    margin-top: 100px
-    margin-left: auto
-    margin-right: auto
-    width: 100%
-    max-width: 1170px
-    display: flex
-    justify-content: space-between
-    align-items: center
-    &__element
-      text-align: center
-      width: 25%
-    &__pic
-      margin-bottom: 20px
-      height: 73px
-      img
-        height: 100%
-    &__title
-      margin-bottom: 15px
-      width: 100%
-      text-align: center
-      font-size: 22px
-      text-transform: uppercase
-      color: #2d2d2d
-    &__subtitle
-      margin-left: auto
-      margin-right: auto
-      width: 80%
-      text-align: center
-      font-size: 17px
-      color: #2d2d2d
+	padding-bottom: 30px
+	width: 100%
+	&-title
+		display: flex
+		justify-content: center
+		align-items: center
+		padding-top: 30px
+		margin-bottom: 30px
+		width: 1170px
+		margin-left: auto
+		margin-right: auto
+		&__text
+			margin-left: 20px
+			margin-right: 20px
+			font-size: 23px
+			text-transform: uppercase
+			text-align: center
+		&__paint
+			width: 100px
+	&-blocks
+		margin-left: auto
+		margin-right: auto
+		width: 1170px
+		display: flex
+		justify-content: space-between
+		align-items: center
+		flex-wrap: wrap
+	&-block1
+		margin-bottom: 20px
+		background: #fff url(../img/features/bow-tie.jpg) no-repeat top
+		background-size: 100%
+		width: 280px
+		height: 350px
+		border-radius: 20px
+		position: relative
+		transition: all 0.5s ease-in-out
+		&::before
+			content: ''
+			display: block
+			position: absolute
+			width: 100%
+			height: 100%
+			border-radius: 20px
+			background-color: rgba(0, 0, 0, 0.6)
+			z-index: 0
+		&:hover
+			background-size: 110%
+		&:hover .features-block__button
+			transform: scaleY(1)
+		&:hover .features-block__title
+			padding-top: 240px
+			margin-bottom: 15px
+	&-block2
+		position: relative
+		margin-bottom: 20px
+		background: url(../img/features/tie.jpeg) no-repeat top
+		background-size: 100%
+		width: 280px
+		height: 350px
+		border-radius: 20px
+		position: relative
+		transition: all 0.5s ease-in-out
+		&::before
+			content: ''
+			display: block
+			position: absolute
+			width: 100%
+			height: 100%
+			border-radius: 20px
+			background-color: rgba(0, 0, 0, 0.6)
+			z-index: 0
+		&:hover
+			background-size: 110%
+		&:hover .features-block__button
+			transform: scaleY(1)
+		&:hover .features-block__title
+			padding-top: 240px
+			margin-bottom: 15px
+	&-block3
+		position: relative
+		margin-bottom: 20px
+		background: url(../img/features/scarf.jpg) no-repeat top
+		background-size: 100%
+		width: 280px
+		height: 350px
+		border-radius: 20px
+		position: relative
+		transition: all 0.5s ease-in-out
+		&::before
+			content: ''
+			display: block
+			position: absolute
+			width: 100%
+			height: 100%
+			border-radius: 20px
+			background-color: rgba(0, 0, 0, 0.6)
+			z-index: 0
+		&:hover
+			background-size: 110%
+		&:hover .features-block__button
+			transform: scaleY(1)
+		&:hover .features-block__title
+			padding-top: 240px
+			margin-bottom: 15px
+	&-block4
+		position: relative
+		margin-bottom: 20px
+		background: url(../img/features/brooch.jpg) no-repeat top
+		background-size: 100%
+		width: 280px
+		height: 350px
+		border-radius: 20px
+		position: relative
+		transition: all 0.5s ease-in-out
+		&::before
+			content: ''
+			display: block
+			position: absolute
+			width: 100%
+			height: 100%
+			border-radius: 20px
+			background-color: rgba(0, 0, 0, 0.6)
+			z-index: 0
+		&:hover
+			background-size: 110%
+		&:hover .features-block__button
+			transform: scaleY(1)
+		&:hover .features-block__title
+			padding-top: 240px
+			margin-bottom: 15px
+	&-block5
+		position: relative
+		margin-bottom: 20px
+		background: url(../img/features/beads.jpg) no-repeat top
+		background-size: 100%
+		width: 280px
+		height: 350px
+		border-radius: 20px
+		position: relative
+		transition: all 0.5s ease-in-out
+		&::before
+			content: ''
+			display: block
+			position: absolute
+			width: 100%
+			height: 100%
+			border-radius: 20px
+			background-color: rgba(0, 0, 0, 0.6)
+			z-index: 0
+		&:hover
+			background-size: 110%
+		&:hover .features-block__button
+			transform: scaleY(1)
+		&:hover .features-block__title
+			padding-top: 240px
+			margin-bottom: 15px
+	&-block6
+		position: relative
+		margin-bottom: 20px
+		background: url(../img/features/earrings.jpg) no-repeat top
+		background-size: 100%
+		width: 280px
+		height: 350px
+		border-radius: 20px
+		position: relative
+		transition: all 0.5s ease-in-out
+		&::before
+			content: ''
+			display: block
+			position: absolute
+			width: 100%
+			height: 100%
+			border-radius: 20px
+			background-color: rgba(0, 0, 0, 0.6)
+			z-index: 0
+		&:hover
+			background-size: 110%
+		&:hover .features-block__button
+			transform: scaleY(1)
+		&:hover .features-block__title
+			padding-top: 240px
+			margin-bottom: 15px
+	&-block7
+		position: relative
+		margin-bottom: 20px
+		background: url(../img/features/pics.jpg) no-repeat top
+		background-size: 100%
+		width: 280px
+		height: 350px
+		border-radius: 20px
+		position: relative
+		transition: all 0.5s ease-in-out
+		&::before
+			content: ''
+			display: block
+			position: absolute
+			width: 100%
+			height: 100%
+			border-radius: 20px
+			background-color: rgba(0, 0, 0, 0.6)
+			z-index: 0
+		&:hover
+			background-size: 110%
+		&:hover .features-block__button
+			transform: scaleY(1)
+		&:hover .features-block__title
+			padding-top: 240px
+			margin-bottom: 15px
+	&-block8
+		position: relative
+		margin-bottom: 20px
+		background: url(../img/features/others.jpg) no-repeat top
+		background-size: 100%
+		width: 280px
+		height: 350px
+		border-radius: 20px
+		position: relative
+		transition: all 0.5s ease-in-out
+		&::before
+			content: ''
+			display: block
+			position: absolute
+			width: 100%
+			height: 100%
+			border-radius: 20px
+			background-color: rgba(0, 0, 0, 0.6)
+			z-index: 0
+		&:hover
+			background-size: 110%
+		&:hover .features-block__button
+			transform: scaleY(1)
+		&:hover .features-block__title
+			padding-top: 240px
+			margin-bottom: 15px
+	&-block
+		&__text
+			text-align: center
+			width: 100%
+			height: 100%
+			position: absolute
+			z-index: 3
+		&__title
+			padding-top: 280px
+			margin-bottom: 5px
+			font-size: 27px
+			color: #fff
+			transition: all 0.5s ease-in-out
+		&__subtitle
+			z-index: 3
+		&__button
+			margin-left: auto
+			margin-right: auto
+			display: flex
+			justify-content: center
+			align-items: center
+			background: #b1cc3c
+			font-size: 15px
+			font-weight: 600
+			border: 2px solid #b1cc3c
+			border-radius: 50px
+			color: #000
+			outline: none
+			transform: scaleY(0)
+			width: 150px
+			height: 45px
+			z-index: 3
+			transition: all linear 0.4s
+			&:hover
+				background: #fff
+				cursor: pointer
+		&__rel
+			color: #000
+			text-decoration: none
