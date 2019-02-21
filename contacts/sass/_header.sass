@@ -1,0 +1,92 @@
+.header
+	padding-bottom: 38px
+	background: #272e3c
+	z-index: 2
+	&-block
+		margin-bottom: 37px
+		padding-top: 42px
+		max-width: 1200px
+		margin-left: auto
+		margin-right: auto
+		display: flex
+		align-items: center
+		&__company
+			margin-top: 5px	
+			margin-right: 159px
+			font-size: 14.5px
+			font-family: 'Roboto Regular', sans-serif
+			color: #fff
+		&__logo
+			margin-right: 35px
+		&__contacts
+			margin-top: 7px
+			display: flex
+			align-items: center
+		&__phone
+			margin-right: 29px
+			font-size: 16px
+			color: #fff
+		&__button
+			font-family: 'Roboto Bold', sans-serif
+			font-size: 15px
+			background-color: transparent
+			color: #fff
+			border: 2px solid #fff
+			padding: 14px 29px
+			border-radius: 50px
+			outline: none
+			&:hover
+				transition: all 0.3s ease-in-out
+				background-color: #fff
+				color: #000
+	&-menu
+		position: relative
+		max-width: 630px
+		margin-left: auto
+		margin-right: auto
+		display: flex
+		align-items: center
+		&__mobile
+			outline: none
+		&__category
+			text-decoration: none
+			position: relative
+			padding-bottom: 13px
+			margin-right: 44px
+			position: relative
+			font-size: 16px
+			color: #fff
+			border-bottom: 2px solid transparent
+			&::before
+				position: absolute
+				top: 31px
+				left: 0
+				width: 38px
+				border-bottom: 2px solid transparent
+				content: ""
+				transition: all linear 0.5s
+			&:hover
+				cursor: pointer
+				&::before
+					border-bottom: 2px solid #0b5e8f
+		&__categoryx
+			text-decoration: none
+			position: relative
+			padding-bottom: 13px
+			margin-right: 46px
+			position: relative
+			font-size: 16px
+			color: #fff
+			border-bottom: 2px solid transparent
+			&::before
+				position: absolute
+				top: 31px
+				left: 0
+				width: 38px
+				border-bottom: 2px solid #0b5e8f
+				content: ""
+				transition: all linear 0.5s
+			&:hover
+				cursor: pointer
+.sb-search
+	top: -15px

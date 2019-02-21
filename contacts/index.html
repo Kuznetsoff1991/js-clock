@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<title>BTG - Business Trans Group</title>
+		<link rel="icon" href="img/favicon.png">
+    <link href="css/reset.css" rel="stylesheet" >
+    <link href="css/fonts.css" rel="stylesheet">
+    <link href="css/bootstrap-grid.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="slick/slick.css" rel="stylesheet">
+    <link rel="stylesheet" href="slick/slick-theme.css">
+    <link rel="stylesheet" type="text/css" href="css/default.css" />
+		<link rel="stylesheet" type="text/css" href="css/component.css" />
+		<link rel="stylesheet" href="css/ui.totop.css">
+	</head>
+	<body>
+	<header class="header">
+		<div class="header-block">
+			<div class="header-block__company">Импортно-экспортная компания</div>
+			<!-- /.header-block__company -->
+			<div class="header-block__logo">
+				<a href="../index.html">
+					<img src="img/header/logo.png" alt="Логотип BTG">
+				</a>	
+			</div>
+			<!-- /.header-block__logo -->
+			<div class="header-block__contacts">
+				<div class="header-block__phone">8 (961) 996-25-03</div>
+				<!-- /.header-block__phone -->
+				<button class="header-block__button">Заказать звонок</button>
+			</div>
+			<!-- /.header-block__contacts -->
+		</div>
+		<!-- /.header-block -->
+
+		<div class="header-menu">
+			<div class="header-menu__mobile" tabindex="0">
+				<div class="header-menu__block">
+					<a class="header-menu__category" href="../index.html">О компании</a>
+					<!-- /.header-menu__category -->
+					<a class="header-menu__category" href="../features/index.html">Услуги</a>
+					<!-- /.header-menu__category -->
+					<a class="header-menu__category" href="../news/index.html">Новости</a>
+					<!-- /.header-menu__category -->
+					<a class="header-menu__category" href="#calc">Калькулятор</a>
+					<!-- /.header-menu__category -->
+					<a class="header-menu__categoryx" href="#contacts">Контакты</a>
+					<!-- /.header-menu__category -->
+					<div id="sb-search" class="sb-search">
+		    		<form>
+			        <input class="sb-search-input" placeholder="Что будете искать?" type="search" value="" name="search" id="text-to-find">
+			        <input class="sb-search-submit" type="submit" onclick="javascript: FindOnPage('text-to-find'); return false;" value="">
+			        <span class="sb-icon-search"></span>
+		    		</form>
+					</div>
+					<!-- /.header-menu__search -->
+				</div>
+			</div>
+		</div>
+		<!-- /.header-menu -->
+	</header>
+	<!-- /.header -->
+	<div class="overlay">
+		<div class="popup-call">
+			<div class="popup-call__title">Заказать звонок</div>
+			<!-- /.popup-call__title -->
+			<div class="popup-call__close"> &times;</div>
+				<!-- /.popup-close -->
+			<div class="popup-call__form">
+				<form action="send.php" method="POST" id="popupform" class="call-form">
+					<input class="popup-call__input1" name="user_name" style="font-weight:bold;" type="text" id="name1" placeholder="Как вас зовут?" required maxlength="50" autocomplete="off"/>
+					<input class="popup-call__input2" name="user_phone" style="font-weight:bold;" type="text" id="phone1" placeholder="Номер телефона" required maxlength="30" autocomplete="off"/>
+					<button onclick="yaCounter48122756.reachGoal('topCall'); return true;" class="popup-call__button" type="submit">Заказать звонок</button>
+				</form>
+			<!-- /.popup-call__form -->
+			</div>
+			<!-- /.popup-call__form -->
+			<div class="popup-call__small">Нажав кнопку «Заказать звонок», <br>
+			я даю согласие на обработку моих персональных данных.</div>
+			<!-- /.popup-call__small -->
+		</div>
+		<!-- /.popup-call -->
+	</div>
+	<!-- /.overlay -->
+
+	<div class="overlay2">
+		<div class="popup-bid">
+			<div class="popup-bid__title">Быстрая заявка</div>
+			<!-- /.popup-call__title -->
+			<div class="popup-bid__close"> &times;</div>
+				<!-- /.popup-close -->
+			<div class="popup-bid__form">
+				<form action="mailer/smart.php" method="POST" id="popupform2" class="bid-form">
+					<input class="popup-bid__input1" style="font-weight:bold;" name="user_place1" type="text" id="place1" placeholder="Откуда" required maxlength="50" autocomplete="off" />
+					<input class="popup-bid__input2" style="font-weight:bold;" name="user_place2" type="text" id="place2" placeholder="Куда" required maxlength="50" autocomplete="off" />
+					<input class="popup-bid__input3" name="user_name" style="font-weight:bold;" type="text" id="name2" placeholder="Как вас зовут?" required maxlength="50" autocomplete="off"/>
+					<input class="popup-bid__input4" name="user_phone" style="font-weight:bold;" type="text" id="phone2" placeholder="Номер телефона" required maxlength="50" autocomplete="off"/>
+					<button onclick="yaCounter48122756.reachGoal('topBtn'); return true;" class="popup-bid__button" type="submit">Заказать звонок</button>
+				</form>
+			<!-- /.popup-call__form -->
+			</div>
+			<!-- /.popup-call__form -->
+			<div class="popup-bid__small">Нажав кнопку «Заказать звонок», <br>
+			я даю согласие на обработку моих персональных данных.</div>
+			<!-- /.popup-call__small -->
+		</div>
+		<!-- /.popup-call -->
+	</div>
+	<!-- /.overlay -->
+	
+	<div class="phankyou" id="over">
+			<div class="phankyou-popup">
+				<div class="phankyou-popup__title">Ваша заявка принята</div>
+				<!-- /.popup-title -->
+				<div class="phankyou-popup__close"> &times;</div>
+				<!-- /.popup-close -->
+				<div class="phankyou-popup__form">
+					<h2>Благодарим за обращение в нашу компанию <br>В ближайшее время мы вам позвоним!</h2>
+				</div>
+				<!-- /.popup-form -->
+			</div>
+			<!-- /.popup -->
+		</div>
+		<!-- /.overlay -->
+
+	<section class="contacts" id="contacts">
+		<div class="contacts-title">
+			<img src="img/contacts/line-title.png" alt="" class="contacts-title__line1">
+			<h2 class="contacts-title__text">Контакты</h2>
+			<img src="img/contacts/line-title.png" alt="" class="contacts-title__line2">
+		</div>
+			<!-- /.contacts-title -->
+		<div class="contacts-blocks">
+			<div class="contacts-block">
+				<div class="contacts-block__elements">
+					<div class="contacts-elements__address">
+						<div class="contacts-elements__title">
+							Наш адрес:
+						</div>
+						<!-- /.contacts-elements_title -->
+						<div class="contacts-elements__sub">
+							Москва, Мясницкий проезд, 41
+						</div>
+						<!-- /.contacts-elements__sub -->
+					</div>
+					<!-- /.contacts-elements__address -->
+					<div class="contacts-elements__address">
+						<div class="contacts-elements__title">
+							Номер телефона:
+						</div>
+						<!-- /.contacts-elements_title -->
+						<div class="contacts-elements__sub">
+							8 (961) 996-25-03
+						</div>
+						<!-- /.contacts-elements__sub -->
+					</div>
+					<!-- /.contacts-elements__address -->
+					<div class="contacts-elements__address">
+						<div class="contacts-elements__title">
+							E-Mail
+						</div>
+						<!-- /.contacts-elements_title -->
+						<div class="contacts-elements__sub">
+							gruz-kitai@gmail.com
+						</div>
+						<!-- /.contacts-elements__sub -->
+					</div>
+					<!-- /.contacts-elements__address -->
+					<div class="contacts-elements__address">
+						<div class="contacts-elements__title">
+							Мы в соц. сетях:
+						</div>
+						<!-- /.contacts-elements_title -->
+					</div>
+					<!-- /.contacts-elements__address -->
+					<div class="contacts-elements__network">
+						<a class="contacts-elements__ref" href="https://vk.com/">
+							<div class="contacts-elements__image">
+								<img class="contacts-elements__pic" src="img/contacts/vk.png" alt="">
+							</div>
+						</a>
+						<a class="contacts-elements__ref" href="https://ru-ru.facebook.com/">
+							<div class="contacts-elements__image">
+								<img class="contacts-elements__pic" src="img/contacts/facebook.png" alt="">
+							</div>
+						</a>
+						<a class="contacts-elements__ref" href="https://www.instagram.com/">
+							<div class="contacts-elements__image">
+								<img class="contacts-elements__pic" src="img/contacts/twitter.png" alt="">
+							</div>
+						</a>
+					</div>
+				</div>
+				<!-- /.contacts-block__elements -->
+			</div>
+			<!-- /.contacts-block -->
+			<div class="contacts-map">
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1587.0336518809647!2d37.64539225913521!3d55.76884600621949!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54a636f5750e9%3A0x7230915e06cee42!2z0JzRj9GB0L3QuNGG0LrQuNC5INC_0YAt0LQsIDQxLCDQnNC-0YHQutCy0LAsIDEwNzA3OA!5e0!3m2!1sru!2sru!4v1521286491059" width="557" height="395" style="border:0" allowfullscreen></iframe>
+			</div>
+			<div class="contacts-map2">
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1587.0336518809647!2d37.64539225913521!3d55.76884600621949!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54a636f5750e9%3A0x7230915e06cee42!2z0JzRj9GB0L3QuNGG0LrQuNC5INC_0YAt0LQsIDQxLCDQnNC-0YHQutCy0LAsIDEwNzA3OA!5e0!3m2!1sru!2sru!4v1521286491059" width="300" height="200" style="border:0" allowfullscreen></iframe>
+			</div>
+			<div class="contacts-map3">
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1587.0336518809647!2d37.64539225913521!3d55.76884600621949!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54a636f5750e9%3A0x7230915e06cee42!2z0JzRj9GB0L3QuNGG0LrQuNC5INC_0YAt0LQsIDQxLCDQnNC-0YHQutCy0LAsIDEwNzA3OA!5e0!3m2!1sru!2sru!4v1521286491059" width="400" height="300" style="border:0" allowfullscreen></iframe>
+			</div>
+			<!-- /.contacts-map -->
+		</div>
+		<!-- /.contacts-blocks -->
+	</section>
+	<!-- /.contacts -->
+	
+
+
+	<section class="footer-form" id="calc">
+		<div class="footer-form__contain">
+			<div class="footer-form__title">
+				<h2>Запрос на услуги</h2>
+			</div>
+			<!-- /.popup-call__title -->
+			<div class="footer-form__blocks">
+				<div class="footer-form__block">
+					<form action="mailer/smart.php" method="POST" id="footerform" class="form-footer">
+						<input class="footer-form__input1" style="font-weight:bold;" name="user_place1" type="text" id="place3" placeholder="Откуда" required maxlength="50" autocomplete="off"/>
+						<input class="footer-form__input2" style="font-weight:bold;" name="user_place2" type="text" id="place4" placeholder="Куда" required maxlength="50" autocomplete="off"/>
+						<input class="footer-form__input3" style="font-weight:bold;" name="user_name" type="text" id="name3" placeholder="Как вас зовут?" required maxlength="50" autocomplete="off"/>
+						<input class="footer-form__input4" style="font-weight:bold;" name="user_phone" type="text" id="phone3" placeholder="Номер телефона" required maxlength="50" autocomplete="off"/>
+						<button onclick="yaCounter48122756.reachGoal('topBtn'); return true;" class="footer-form__button" type="submit">Получить расчет</button>
+					</form>
+			<!-- /.popup-call__form -->
+				</div>
+			<!-- /.popup-call__form -->
+				<div class="footer-form__small">Нажав кнопку «Получить расчет», я даю согласие на обработку моих персональных данных.
+				</div>
+			<!-- /.popup-call__small -->
+			</div>
+		</div>
+		<!-- /.popup-call -->
+	</section>
+	<!-- /.footer-form -->
+		<div class="footer">
+			<div class="footer-block">
+				<div class="footer-block__logo">
+					<a href="../index.html">
+						<img src="img/footer/footer-logo.png" alt="">
+					</a>	
+				</div>
+				<!-- /.footer-block__logo -->
+				<div class="footer-block__menu">
+					<a class="footer-menu__category" href="../index.html">О компании</a>
+					<!-- /.header-menu__category -->
+					<a class="footer-menu__category" href="../features/index.html">Услуги</a>
+					<!-- /.header-menu__category -->
+					<a class="footer-menu__category" href="../news/index.html">Новости</a>
+					<!-- /.header-menu__category -->
+					<a class="footer-menu__category" href="#calc">Калькулятор</a>
+					<!-- /.header-menu__category -->
+					<a class="footer-menu__categoryx" href="../contacts/index.html">Контакты</a>
+					<!-- /.header-menu__category -->
+				</div>
+				<!-- /.footer-block__menu -->
+				<div class="footer-block__creation">
+					<div class="footer-creation__text">
+						Создание сайта:
+					</div>
+					<!-- /.footer-creation__text -->
+					<div class="footer-creation__logo">
+						<a href="http://xn--90ana5af.xn--p1ai/"><img src="img/footer/logo-irs.png" alt=""></a>
+					</div>
+					<!-- /.footer-creation__logo -->
+				</div>
+				<!-- /.footer-block__creation -->
+			</div>
+			<!-- /.footer-block -->
+		</div>
+		<!-- /.footer -->
+	<!-- Yandex.Metrika counter --> <script> (function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter48122756 = new Ya.Metrika({ id:48122756, clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true, trackHash:true }); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = "https://cdn.jsdelivr.net/npm/yandex-metrica-watch/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks"); </script> <noscript><div><img src="https://mc.yandex.ru/watch/48122756" style="position:absolute; left:-9999px;" alt="" /></div></noscript> <!-- /Yandex.Metrika counter -->
+	<script src="js/modernizr.custom.js"></script>
+	<!-- Поиск -->
+	<script>
+			var lastResFind=""; // последний удачный результат
+			var copy_page=""; // копия страницы в ихсодном виде
+			function TrimStr(s) {
+			     s = s.replace( /^\s+/g, '');
+			  return s.replace( /\s+$/g, '');
+			}
+			function FindOnPage(inputId) {//ищет текст на странице, в параметр передается ID поля для ввода
+			  var obj = window.document.getElementById(inputId);
+			  var textToFind;
+			 
+			  if (obj) {
+			    textToFind = TrimStr(obj.value);//обрезаем пробелы
+			  } else {
+			    alert("Введенная фраза не найдена");
+			    return;
+			  }
+			  if (textToFind == "") {
+			    alert("Вы ничего не ввели");
+			    return;
+			  }
+			  
+			  
+			  if(copy_page.length>0)
+			        document.body.innerHTML=copy_page;
+			  else copy_page=document.body.innerHTML;
+
+			  
+			  document.body.innerHTML = document.body.innerHTML.replace(eval("/name="+lastResFind+"/gi")," ");//стираем предыдущие якори для скрола
+			  document.body.innerHTML = document.body.innerHTML.replace(eval("/"+textToFind+"/gi"),"<a name="+textToFind+" style='background:rgb(255, 100, 100)'>"+textToFind+"</a>"); //Заменяем найденный текст ссылками с якорем;
+			  lastResFind=textToFind; // сохраняем фразу для поиска, чтобы в дальнейшем по ней стереть все ссылки
+			  window.location = '#'+textToFind;//перемещаем скрол к последнему найденному совпадению
+			 } 
+		</script>
+
+		<!-- Модальные окна -->
+		<script src="js/jquery-1.7.2.min.js"></script>
+		<script>
+
+			$(document).ready(function(){
+
+				$('.header-block__button').on("click", function(){
+					$('.overlay').show();
+				});
+
+				$('.popup-call__close').on("click", function(){
+					$('.overlay').hide();
+				});
+			});
+
+
+		</script>
+		<script>
+
+			$(document).ready(function(){
+
+				$('.header-main__button').on("click", function(){
+					$('.overlay2').show();
+				});
+
+				$('.popup-bid__close').on("click", function(){
+					$('.overlay2').hide();
+				});
+			});
+
+
+		</script>
+		<script>
+
+			$(document).ready(function(){
+
+				$('.preview-blocks__btn').on("click", function(){
+					$('.overlay2').show();
+				});
+
+				$('.popup-bid__close').on("click", function(){
+					$('.overlay2').hide();
+				});
+			});
+
+
+		</script>
+		<script>
+
+			$(document).ready(function(){
+
+				$('').on("click", function(){
+					$('.phankyou').show();
+				});
+
+				$('.phankyou-popup__close').on("click", function(){
+					$('.phankyou').hide();
+				});
+			});
+
+		</script>
+		
+
+		<script src="js/wow.min.js"></script>
+		<script>
+				new WOW().init();
+		</script>
+
+		<!-- Компактный поиск -->
+		<script src="js/jquery-1.7.2.min.js"></script>
+		<script src="js/classie.js"></script>
+		<script src="js/uisearch.js"></script>
+		<script>
+	    new UISearch( document.getElementById( 'sb-search' ) );
+		</script>
+
+		<!-- Подключение плавной прокрутки -->
+		<script>
+			$('a[href^="#"]').click(function (){
+			var target = $(this).attr('href');
+			$('html, body').animate({scrollTop: $(target).offset().top - 50 }, 1200);
+			return false;
+			});
+		</script>
+
+		<!-- Подключение отправки форм -->
+		<script>
+		$(function(){
+		  'use strict';
+		$('#popupform').on('submit', function(e){
+		    e.preventDefault();
+		    var fd = new FormData( this );
+		    $.ajax({
+		      url: 'send.php',
+		      type: 'POST',
+		      contentType: false, 
+		      processData: false, 
+		      data: fd,
+		      success: function(msg){
+		if(msg == 'ok') {
+			$('.overlay').hide();
+		  $('.phankyou').show();
+		  document.getElementById("popupform").reset();
+		} else {
+		        $(".button").val("Ошибка");
+		        setTimeout(function() {$(".button").val("Отправить");}, 3000);
+		}
+		      }
+		    });
+		    return false;
+		  });
+		});
+		</script>
+		<script>
+		$(function(){
+		  'use strict';
+		$('#popupform2').on('submit', function(e){
+		    e.preventDefault();
+		    var fd = new FormData( this );
+		    $.ajax({
+		      url: 'send.php',
+		      type: 'POST',
+		      contentType: false, 
+		      processData: false, 
+		      data: fd,
+		      success: function(msg){
+		if(msg == 'ok') {
+			$('.overlay2').hide();
+		  $('.phankyou').show();
+		  document.getElementById("popupform2").reset();
+		} else {
+		        $(".button").val("Ошибка");
+		        setTimeout(function() {$(".button").val("Отправить");}, 3000);
+		}			
+		      }
+		    });
+		  });
+		});
+		</script>
+		<script>
+		$(function(){
+		  'use strict';
+		$('#footerform').on('submit', function(e){
+		    e.preventDefault();
+		    var fd = new FormData( this );
+		    $.ajax({
+		      url: 'send.php',
+		      type: 'POST',
+		      contentType: false, 
+		      processData: false, 
+		      data: fd,
+		      success: function(msg){
+		if(msg == 'ok') {
+		  $('.phankyou').show();
+		  document.getElementById("footerform").reset();
+		} else {
+		        $(".button").val("Ошибка");
+		        setTimeout(function() {$(".button").val("Отправить");}, 3000);
+		}
+		      }
+			    });
+		  });
+		});
+		</script>
+
+		<!-- Слайдер новостей -->
+		<script src="js/jquery-1.7.2.min.js"></script>
+		<script src="slick/slick.min.js"></script>
+		<script>
+				$('.slider-news_top').slick({
+					arrows: false,
+					slidesToShow: 1,
+					slidesToScroll: 1,
+					asNavFor: '.slider-news_bottom'
+				});
+				$('.slider-news_bottom').slick({
+					arrows: true,
+					slidesToShow: 4,
+					slidesToScroll: 1,
+				  responsive: [
+				    {
+				      breakpoint: 576,
+				      settings: {
+				        slidesToShow: 1,
+				        slidesToScroll: 1,
+				      }
+				    },
+				    {
+				      breakpoint: 768,
+				      settings: {
+				        slidesToShow: 1,
+				        slidesToScroll: 1,
+				      }
+				    }
+				  ],
+					prevArrow: '<div class="newsslider-arrow newsslider-arrow_left"></div>',
+					nextArrow: '<div class="newsslider-arrow newsslider-arrow_right"></div>',
+					asNavFor: '.slider-news_top',
+	  			focusOnSelect: true
+				});
+		</script>
+		<script src="js/jquery-1.7.2.min.js"></script>
+		<script src="js/jquery.maskedinput.min.js"></script>
+		<script>
+			jQuery(function($){
+				$("#phone1").mask("+7 (999) 999-99-99");
+			});
+		</script>
+		<script>
+			jQuery(function($){
+				$("#phone2").mask("+7 (999) 999-99-99");
+			});
+		</script>
+		<script>
+			jQuery(function($){
+				$("#phone3").mask("+7 (999) 999-99-99");
+			});
+		</script>
+
+		<!-- Подключение кнопки ВВЕРХ -->
+		<script src="js/jquery-1.7.2.min.js"></script>
+    <!-- easing plugin ( optional ) -->
+    <script src="js/easing.js"></script>
+    <!-- UItoTop plugin -->
+    <script src="js/jquery.ui.totop.js"></script>
+    <!-- Starting the plugin -->
+    <script>
+    $(document).ready(function() {
+
+    var defaults = {
+    containerID: 'toTop', // fading element id
+    containerHoverID: 'toTopHover', // fading element hover id
+    scrollSpeed: 1200,
+    easingType: 'linear'
+    };
+
+     
+    $().UItoTop({ easingType: 'easeOutQuart' });
+     
+    });
+    </script>
+	</body>
+</html>

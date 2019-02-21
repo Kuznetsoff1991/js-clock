@@ -1,0 +1,179 @@
+.header
+	background: url(../img/header/header-bg.jpg) center no-repeat
+	background-size: cover
+	z-index: 2
+	&-block
+		margin-bottom: 37px
+		padding-top: 49px
+		max-width: 1200px
+		margin-left: auto
+		margin-right: auto
+		display: flex
+		align-items: center
+		&__company
+			margin-top: 5px	
+			margin-right: 159px
+			font-size: 14.5px
+			font-family: 'Roboto Regular', sans-serif
+			color: #fff
+		&__logo
+			margin-right: 35px
+		&__contacts
+			margin-top: 7px
+			display: flex
+			align-items: center
+		&__phone
+			margin-right: 29px
+			font-size: 16px
+			color: #fff
+		&__button
+			font-family: 'Roboto Bold', sans-serif
+			font-size: 15px
+			background-color: transparent
+			color: #fff
+			border: 2px solid #fff
+			padding: 14px 29px
+			border-radius: 50px
+			outline: none
+			&:hover
+				transition: all 0.3s ease-in-out
+				background-color: #fff
+				color: #000
+	&-menu
+		&__mobile
+			outline: none
+		&__block
+			position: relative
+			margin-bottom: 156px
+			max-width: 630px
+			margin-left: auto
+			margin-right: auto
+			display: flex
+			align-items: center
+		&__category
+			text-decoration: none
+			position: relative
+			padding-bottom: 13px
+			margin-right: 46px
+			position: relative
+			font-size: 16px
+			color: #fff
+			border-bottom: 2px solid transparent
+			&::before
+				position: absolute
+				top: 31px
+				left: 0
+				width: 38px
+				border-bottom: 2px solid transparent
+				content: ""
+				transition: all linear 0.5s
+			&:hover
+				cursor: pointer
+				&::before
+					border-bottom: 2px solid #0b5e8f
+		&__categoryx
+			text-decoration: none
+			position: relative
+			padding-bottom: 13px
+			margin-right: 46px
+			position: relative
+			font-size: 16px
+			color: #fff
+			border-bottom: 2px solid transparent
+			&::before
+				position: absolute
+				top: 31px
+				left: 0
+				width: 38px
+				border-bottom: 2px solid #0b5e8f
+				content: ""
+				transition: all linear 0.5s
+			&:hover
+				cursor: pointer
+	&-main
+		width: 100%
+		padding-bottom: 142px
+		&__one
+			margin-left: auto
+			margin-right: auto
+			max-width: 1200px
+		&__two
+			margin-left: auto
+			margin-right: auto
+			max-width: 1200px
+		&__three
+			margin-left: auto
+			margin-right: auto
+			max-width: 1200px
+		&__slider
+			width: 100%
+			margin-left: auto
+			margin-right: auto
+			display: flex
+			justify-content: center
+		&__title
+			margin-bottom: 20px
+			width: 580px
+			h1
+				font-size: 60px
+				letter-spacing: 2px
+				line-height: 68px
+				color: #fff
+		&__sub
+			margin-bottom: 31px
+			width: 500px
+			font-size: 16px
+			font-family: 'Roboto Regular', sans-serif
+			color: #fff
+		&__subtitle
+			font-size: 16px
+			line-height: 30px
+		&__button
+			margin-left: 5px
+			margin-bottom: 88px
+			font-family: 'Roboto Bold', sans-serif
+			font-size: 15px
+			background-color: #0d5f90
+			color: #fff
+			border: 2px solid #0d5f90
+			padding: 13px 31px
+			border-radius: 50px
+			outline: none
+			transition: all 0.3s ease-in-out
+			&:hover
+				background-color: darken(#0d5f90, 10)
+				border: 2px solid darken(#0d5f90, 10)
+
+			
+.slick-slide
+	outline: none
+.slick-dots li
+	background: url('../img/header/slick-dot2.png') center no-repeat
+	background-size: 70% 70%
+	content: ''
+.slick-dots li.slick-active
+	background: url('../img/header/slick-dot1.png') center no-repeat
+	background-size: 70% 70%
+	content: ''
+.slick-dots li button:hover
+	content: ''
+.slick-dots li button:before
+	width: 20px
+	height: 20px
+	content: ''
+.slider-main
+	position: absolute
+	top: 13%
+	height: 100px
+	width: 47px
+	border: none
+	z-index: 4
+	&:hover
+		cursor: pointer
+	&_right
+		right: 1%
+		background: url(../img/header/arrow-right.png) center no-repeat
+	&_left
+		left: 1%
+		background: url(../img/header/arrow-left.png) center no-repeat
+
