@@ -1,0 +1,25 @@
+#toTop {
+  width: 50px;
+  height: 50px;
+  border: 1px solid #016e51;
+  border-radius: 4px;
+  background: #016e51;
+  text-align: center;
+  padding: 5px;
+  position: fixed;
+  bottom: 15px;
+  /* отступ кнопки от нижнего края страницы*/
+  right: 15px;
+  cursor: pointer;
+  display: none;
+  vertical-align: middle;
+  color: #d0d0d0;
+  font-family: verdana;
+  font-size: 27px;
+  transition: all linear 0.5s;
+  z-index: 10;
+}
+
+#toTop img {
+  width: 20px;
+}

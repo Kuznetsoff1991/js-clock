@@ -1,0 +1,8 @@
+input {
+  outline: none;
+}
+
+button {
+  outline: none;
+  cursor: pointer;
+}
