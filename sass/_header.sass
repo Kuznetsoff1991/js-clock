@@ -1,158 +1,146 @@
 .header
-	width: 100%
-	position: fixed
-	z-index: 10
-	background: #fff
-	opacity: 0.9
-	&-blocks
-		width: 1170px
-		margin-left: auto
-		margin-right: auto
-		text-align: center
-	&-block
-		&__preview
-			padding-top: 0
-			display: flex
-			align-items: center
-			justify-content: space-between
-		&__logo
-			display: flex
-			align-items: center
-			margin-top: 8px
-			margin-bottom: 3px
-			width: 250px
-			height: 70px
-			z-index: 3
-		&__img
-			width: 70px
-			height: 70px
-			z-index: 3
-		&__button
-			background: #fff
-			font-size: 15px
-			font-weight: 600
-			border: 2px solid #b1cc3c
-			border-radius: 50px
-			color: #000
-			outline: none
-			width: 150px
-			height: 45px
-			z-index: 3
-			transition: all linear 0.4s
-			font-family: 'Gabriela', sans-serif
-			&:hover
-				background: #b1cc3c
-	&-menu
-		display: flex
-		justify-content: space-between
-		align-items: center
-		z-index: 3
-		width: 600px
-		height: 50px
-		transition: all linear 0.4s
-		&__ham
-			display: none
-			position: fixed
-			top: 3%
-			left: 2%
-			width: 40px
-			height: 40px
-			background: url(../img/header/menu-ham.png) no-repeat center
-			background-size: 100%
-			z-index: 15
-		&__arrow
-			display: none
-			position: fixed
-			top: 3%
-			left: 2%
-			width: 40px
-			height: 40px
-			background: url(../img/header/menu-arrow.png) no-repeat center
-			background-size: 100%
-			z-index: 15
-		&__block1, &__block2, &__block3, &__block4, &__block5, &__block6
-			margin-left: 10px
-			margin-right: 10px
-			transition: all linear 0.3s
-			&:hover
-				color: #000
-		&__block3
-			transition: 0.5s ease-in-out
-			position: relative
-			&:hover
-				color: #000
-			&:hover .header-menu__block3menu
-				opacity: 1
-				transform: scaleY(1)
-			&:hover .header-menu__ref
-				color: #b1cc3c
-		&__block3menu
-			display: block
-			left: -10px
-			background: #fff
-			padding-top: 35px
-			padding-left: 10px
-			padding-right: 10px
-			position: absolute
-			width: 200px
-			text-align: left
-			opacity: 0
-			transform: scaleY(0)
-			transform-origin: 0 0
-			transition: 0.5s ease-in-out
-			overflow-y: auto
-		&__ref
-			text-transform: uppercase
-			padding: 10px 5px
-			text-decoration: none
-			color: #000
-			font-size: 15px
-			font-weight: 600
-			text-shadow: none
-			transition: color 0.3s
-			&:hover
-				color: #b1cc3c
-		&__refx
-			color: #b1cc3c
-		&__refmenu
-			display: block
-			width: 100%
-			text-transform: uppercase
-			padding: 10px 5px
-			text-decoration: none
-			color: #000
-			font-size: 15px
-			font-weight: 600
-			text-shadow: none
-			transition: color 0.3s
-			&:hover
-				color: #b1cc3c
-		&__refmobile
-			display: none
-			margin-bottom: 15px
-			span
-				position: relative
-				text-transform: uppercase
-				padding: 10px 5px
-				text-decoration: none
-				color: #000
-				font-size: 15px
-				font-weight: 600
-				text-shadow: none
-				transition: color 0.3s
-				&::after
-					top: 0
-					right: -20px
-					position: absolute
-					content: '\25B6'
-					font-size: 26px
-					transform: rotate(90deg)
-		&__ref3
-			position: relative
-			&::after
-				top: 0
-				right: -15px
-				position: absolute
-				content: '\25B6'
-				font-size: 26px
-				transform: rotate(90deg)
+  width: 100%
+  height: 650px
+  position: relative
+  background: url(../img/header/bg.jpg) center no-repeat
+  background-size: cover
+  &-blocks
+    width: 100%
+    background: rgba(255, 255, 255, 0.4)
+  &-block
+    height: 86px
+    width: 1170px
+    margin-left: auto
+    margin-right: auto
+    display: flex
+    justify-content: space-between
+    align-items: center
+    &__info
+      display: flex
+      align-items: center
+    &__logo
+      margin-right: 30px
+      width: 180px
+      z-index: 4
+      img
+        padding-top: 5px
+    &__descr
+      text-transform: uppercase
+      font-size: 24px
+      color: #223a5e
+      font-weight: 500
+    &__rels
+      display: flex
+      align-items: center
+      button
+        margin-left: 30px
+        background: #de6a5b
+        width: 170px
+        height: 45px
+        border: 1px solid #de6a5b
+        border-radius: 3px
+        color: #fff
+        font-size: 18px
+        text-transform: uppercase
+        transition: all linear 0.35s
+    &__tel
+      font-size: 24px
+      color: #223a5e
+      font-weight: 500
+      a
+        transition: all linear 0.35s
+        font-size: 24px
+        color: #223a5e
+        font-weight: 500
+    &__telpic
+      display: none
+  &-menu
+    position: fixed
+    height: 100%
+    top: 0
+    left: -600px
+    width: 280px
+    height: 100%
+    background: #fff
+    z-index: 20
+    transition: all linear 0.45s
+    overflow-y: auto
+    &:before
+      content: 'Меню'
+      position: absolute
+      top: 0
+      right: 0
+      padding-left: 20px
+      color: #fff
+      font-size: 20px
+      text-transform: uppercase
+      width: 280px
+      height: 50px
+      background: #de6a5b
+      display: flex
+      align-items: center
+    &__burger
+      margin-left: 15px
+      background: url(../img/header/ham.png) center no-repeat
+      background-size: 100%
+      width: 30px
+      height: 30px
+      position: fixed
+      top: 27px
+      left: 15px
+      z-index: 21
+      transition: all linear 0.45s
+    &__close
+      background: url(../img/header/close.png) center no-repeat
+      background-size: 100%
+      position: absolute
+      width: 30px
+      height: 30px
+      top: 10px
+      right: 10px
+      z-index: 21
+    &__block
+      padding-top: 60px
+      padding-left: 25px
+      display: flex
+      justify-content: center
+      flex-wrap: wrap
+      width: 100%
+    &__rel
+      width: 100%
+      margin-bottom: 10px
+      a
+        padding-left: 14px
+        font-size: 20px
+        color: #223a5e
+        font-weight: 400
+        position: relative
+        &:before
+          content: '•'
+          position: absolute
+          font-size: 15px
+          top: 4px
+          left: 0
+    &__rel:nth-child(2)
+      margin-bottom: 0
+    &__minirel
+      padding-top: 10px
+      padding-left: 30px
+      .header-menu__rel
+        a
+          color: #de6a5b
+      .header-menu__rel:nth-child(2)
+        margin-bottom: 10px
+.main-block
+  margin-left: auto
+  margin-right: auto
+  width: 1170px
+  &__title
+    margin-top: 205px
+    font-size: 48px
+    font-weight: 500
+    text-transform: uppercase
+    color: #223a5e
+  &__subtitle
+    font-size: 30px
+    color: #223a5e

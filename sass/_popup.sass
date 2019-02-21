@@ -1,0 +1,85 @@
+.overlay
+  position: fixed
+  display: none
+  top: 0
+  width: 100%
+  height: 100%
+  z-index: 250
+  background-color: rgba(0, 0, 0, 0.7)
+.popup
+  padding: 30px
+  text-align: center
+  z-index: 250
+  position: fixed
+  margin: auto
+  left: 0
+  top: 0
+  right: 0
+  bottom: 0
+  width: 100%
+  max-width: 320px
+  min-width: 300px
+  max-height: 400px
+  background-color: #fff
+  border-radius: 5px
+  &-close
+    position: absolute
+    right: 9px
+    top: -9px
+    font-size: 50px
+    color: #000
+    font-weight: 300
+    cursor: pointer
+  &-form
+    display: flex
+    flex-wrap: wrap
+    justify-content: center
+  &-title
+    width: 100%
+    text-align: center
+    margin-bottom: 30px
+    font-size: 22px
+    font-weight: 600
+    text-transform: uppercase
+    color: #223a5e
+  &-small
+    margin-left: auto
+    margin-right: auto
+    width: 95%
+    text-align: center
+    font-size: 15px
+    color: #223a5e
+.popupform
+  display: flex
+  flex-wrap: wrap
+  justify-content: center
+.form
+  margin-bottom: 10px
+  &-input
+    display: block
+    margin-left: auto
+    margin-right: auto
+    padding-top: 10px
+    padding-left: 5px
+    margin-bottom: 10px
+    width: 250px
+    height: 40px
+    color: #223a5e
+    border: none
+    font-size: 15px
+    border-bottom: 1px solid #de6a5b
+  &-button
+    margin-top: 15px
+    margin-left: auto
+    margin-right: auto
+    display: block
+    background: #de6a5b
+    width: 170px
+    height: 45px
+    border: 1px solid #de6a5b
+    border-radius: 3px
+    color: #fff
+    font-size: 18px
+    text-transform: uppercase
+    transition: all linear 0.35s
+

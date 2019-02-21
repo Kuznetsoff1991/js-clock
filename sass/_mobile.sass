@@ -1,891 +1,981 @@
 @media (max-width: 578px) and (min-width: 320px)
-	.header
-		position: relative
-		opacity: 1
-		&-blocks
-			width: 95%
-		&-menu
-			padding-top: 20px
-			display: none
-			top: 0
-			background: #fff
-			width: 100%
-			height: auto
-			position: fixed
-			flex-wrap: wrap
-			justify-content: flex-start
-			opacity: 1
-			z-index: 10
-			&__block1, &__block2, &__block3, &__block4, &__block5
-				margin-left: auto
-				margin-right: auto
-				width: 100%
-				margin-bottom: 15px
-				&:hover
-					cursor: pointer
-				&:hover .header-menu__ref
-					color: #000
-			&__block1
-				&:hover .header-menu__ref
-					color: #b1cc3c
-			&__block3menu
-				left: 0
-				opacity: 1
-				transform: scaleY(1)
-				display: none
-				text-align: center
-				position: relative
-				padding: 5px 0 5px 0
-				width: 100%
-				background: rgba(177, 204, 60, 0.3)
-			&__refmenu
-				&:hover
-					color: #000
-			&__ham
-				display: block
-				z-index: 15
-			&__ref3
-				display: none
-			&__refmobile
-				display: block
-		&-block
-			&__preview
-				flex-wrap: wrap
-				justify-content: center
-			&__logo
-				width: 220px
-			&__company
-				font-size: 14px
-			&__button
-				display: block
-				&:hover
-					background: #fff
-	.window
-		&-offer
-			padding: 15px 10px
-			width: 300px
-			top: 2%
-			&__title
-				margin-bottom: 15px
-				font-size: 20px
-			&__button
-				&:hover
-					background-color: #b1cc3c
-					border: 2px solid #b1cc3c
-			&__small
-				font-size: 12px
-				line-height: 1.4
-	.main
-		padding-top: 20px
-		&-slider
-			&__description
-				width: 100%
-			&__text
-				margin-top: 0
-				width: 100%
-				height: 100%
-				border-radius: 0
-			&__title
-				width: 100%
-				font-size: 19px
-				font-weight: 600
-			&__subtitle
-				width: 100%
-				font-size: 16px
-				padding-top: 30px
-				margin-bottom: 50px
-			&__buttons
-				flex-wrap: wrap
-			&__catalog
-				margin-left: auto
-				margin-right: auto
-				margin-bottom: 10px
-				&:hover
-					background: #b1cc3c
-			&__order
-				margin-left: auto
-				margin-right: auto
-				&:hover
-					background: #fff
-			&__list
-				width: 95%
-				margin-left: auto
-				margin-right: auto
-			&__row
-				font-size: 16px
-				margin-bottom: 7px
-	.slider-main
-		top: 44%
-		&_right
-			right: 1px
-		&_left
-			left: 1px
-	.features
-		&-title
-			width: 100%
-			&__paint
-				display: none
-		&-blocks
-			width: 100%
-			justify-content: center
-		&-block
-			&__title
-				padding-top: 240px
-				margin-bottom: 15px
-			&__button
-				transform: scaleY(1)
-				&:hover
-					background: #b1cc3c
-		&-block1, &-block2, &-block3, &-block4, &-block5, &-block6, &-block7, &-block8
-			&:hover
-				background-size: 100%
-	.advantages
-		&-title
-			width: 100%
-			&__paint
-				display: none
-		&-blocks
-			width: 100%
-			justify-content: center
-		&-block
-			width: 90%
-			max-width: 340px
-			box-shadow: 0 0 50px rgba(0,0,0,0.25)
-			&__pic
-				display: none
-			&__text
-				width: 100%
-				text-align: center
-	.gallery
-		display: none
-	.progress
-		padding-top: 30px
-		&-title
-			width: 100%
-			&__paint
-				display: none
-		&-blocks
-			width: 100%
-		&-slider
-			height: 400px
-			&__pic
-				height: 400px
-		&-text
-			padding-top: 50px
-			width: 90%
-			margin-left: auto
-			margin-right: auto
-			left: 0
-			right: 0
-			&__title
-				font-size: 30px
-			&__subtitle
-				font-size: 20px
-	.reviews
-		&-title
-			width: 100%
-			&__paint
-				display: none
-		&-blocks
-			width: 100%
-		&-slider
-			padding: 0 15px
-			width: 85%
-		&-block
-			width: 85%
-			&__name
-				text-align: center
-			&__text
-				height: 270px
-				font-size: 15px
-			&__buttons
-				flex-wrap: wrap
-			&__rel
-				margin-bottom: 10px
-				margin-left: auto
-				margin-right: auto
-				&:hover
-					background: #fff
-	.reviews-arrow
-		top: 31px
-		&_right
-			right: 15px
-		&_left
-			left: 15px
-	.footer
-		&-blocks
-			width: 100%
-			margin-bottom: 15px
-		&-menu
-			display: none
-		&-block
-			&__preview
-				flex-wrap: wrap
-				justify-content: center
-			&__button
-				display: block
-				&:hover
-					background: #fff
-		&-create
-			width: 100%
-			&__block
-				width: 95%
-			&__rel
-				width: 100%
-			&__img
-				margin-bottom: 10px
-				margin-top: 10px
-
-@media (max-width: 500px) and (min-width: 380px)
-	.header
-		padding-bottom: 20px
-		&-block
-			&__preview
-				margin-left: auto
-				margin-right: auto
-				max-width: 300px
-
-@media (max-width: 578px) and (min-width: 390px)
-	.main
-		padding-top: 0
-		&-slider
-			height: 470px
-			&__one
-				height: 470px
-			&__two
-				height: 470px
-	.features
-		&-block1, &-block2, &-block3, &-block4, &-block5, &-block6, &-block7, &-block8
-			margin-left: 10px
-			margin-right: 10px
-	.reviews
-		&-block
-			&__text
-				height: 200px
-
-@media (max-width: 992px) and (min-width: 579px)
-	.header
-		position: relative
-		opacity: 1
-		&-blocks
-			padding-top: 40px
-			width: 95%
-		&-menu
-			height: 40px
-			padding-top: 0
-			display: flex
-			top: 0
-			background: #fff
-			width: 100%
-			position: fixed
-			flex-wrap: nowrap
-			justify-content: space-between
-			opacity: 1
-			z-index: 10
-			&__block1, &__block2, &__block3, &__block4, &__block5
-				margin-left: auto
-				margin-right: auto
-				margin-bottom: 0
-				display: flex
-				align-items: center
-				height: 40px
-				&:hover
-					cursor: pointer
-				&:hover .header-menu__ref
-					color: #000
-			&__block1
-				&:hover .header-menu__ref
-					color: #b1cc3c
-			&__block3menu
-				left: 0
-				top: 40px
-				opacity: 1
-				transform: scaleY(1)
-				display: none
-				text-align: left
-				position: absolute
-				padding: 5px 0 5px 0
-				width: 200px
-				background: rgba(177, 204, 60, 1)
-			&__refmenu
-				&:hover
-					color: #000
-			&__ham
-				display: none
-				z-index: 15
-			&__ref3
-				display: none
-			&__refmobile
-				display: flex
-				margin-bottom: 0
-				height: auto
-		&-block
-			&__preview
-				flex-wrap: wrap
-				justify-content: center
-			&__logo
-				width: 300px
-			&__company
-				font-size: 16px
-			&__button
-				display: block
-				&:hover
-					background: #fff
-	.window
-		&-offer
-			padding: 15px 10px
-			width: 300px
-			top: 5%
-			&__title
-				margin-bottom: 15px
-				font-size: 20px
-			&__button
-				&:hover
-					background-color: #b1cc3c
-					border: 2px solid #b1cc3c
-			&__small
-				font-size: 12px
-				line-height: 1.4
-	.main
-		padding-top: 10px
-		&-slider
-			&__description
-				width: 470px
-			&__text
-				margin-top: 50px
-			&__title
-				width: 100%
-				font-weight: 600
-			&__subtitle
-				width: 100%
-				font-size: 16px
-				padding-top: 30px
-				margin-bottom: 50px
-			&__buttons
-				flex-wrap: wrap
-			&__catalog
-				margin-left: auto
-				margin-right: auto
-				margin-bottom: 10px
-				&:hover
-					background: #b1cc3c
-			&__order
-				margin-left: auto
-				margin-right: auto
-				&:hover
-					background: #fff
-			&__list
-				width: 95%
-				margin-left: auto
-				margin-right: auto
-			&__row
-				font-size: 16px
-	.slider-main
-		top: 44%
-		&_right
-			right: 1px
-		&_left
-			left: 1px
-	.features
-		&-title
-			width: 100%
-		&-blocks
-			width: 100%
-			justify-content: center
-		&-block1, &-block2, &-block3, &-block4, &-block5, &-block6, &-block7, &-block8
-			margin-left: 10px
-			margin-right: 10px
-		&-block
-			&__title
-				padding-top: 240px
-				margin-bottom: 15px
-			&__button
-				transform: scaleY(1)
-				&:hover
-					background: #b1cc3c
-		&-block1, &-block2, &-block3, &-block4, &-block5, &-block6, &-block7, &-block8
-			&:hover
-				background-size: 100%
-	.advantages
-		&-title
-			width: 100%
-		&-blocks
-			width: 100%
-			justify-content: center
-		&-block
-			margin-left: 10px
-			margin-right: 10px
-			width: 90%
-			max-width: 340px
-			box-shadow: 0 0 50px rgba(0,0,0,0.25)
-			&__pic
-				display: none
-			&__text
-				width: 100%
-				text-align: center
-	.gallery
-		display: none
-	.progress
-		padding-top: 30px
-		&-title
-			width: 100%
-		&-blocks
-			width: 100%
-		&-slider
-			height: 400px
-			&__pic
-				height: 400px
-		&-text
-			padding-top: 50px
-			width: 90%
-			margin-left: auto
-			margin-right: auto
-			left: 0
-			right: 0
-			&__title
-				font-size: 30px
-			&__subtitle
-				font-size: 20px
-	.reviews
-		&-title
-			width: 100%
-		&-blocks
-			width: 100%
-		&-slider
-			width: 85%
-		&-block
-			width: 85%
-			&__name
-				text-align: center
-			&__text
-				height: 170px
-			&__buttons
-				flex-wrap: wrap
-			&__rel
-				margin-bottom: 10px
-				margin-left: auto
-				margin-right: auto
-				&:hover
-					background: #fff
-	.reviews-arrow
-		top: 31px
-		&_right
-			right: 30px
-		&_left
-			left: 30px
-	.footer
-		&-blocks
-			width: 100%
-		&-menu
-			display: none
-		&-block
-			&__preview
-				flex-wrap: wrap
-				justify-content: center
-			&__button
-				display: block
-				&:hover
-					background: #fff
-
+  .header
+    background: url(../img/header/bg.jpg) bottom no-repeat
+    background-size: cover
+    height: 470px
+    &-block
+      padding-top: 12px
+      width: 100%
+      height: 68px
+      display: flex
+      flex-wrap: wrap
+      position: relative
+      align-items: flex-start
+      &__info
+        margin-left: auto
+        margin-right: auto
+        display: block
+      &__logo
+        margin-right: 0
+        width: 130px
+      &__tel
+        position: absolute
+        right: 15px
+        top: 18px
+        width: 33px
+        height: 33px
+        text-align: center
+        a
+          font-size: 18px
+          span
+            display: none
+      &__telpic
+        display: block
+        width: 33px
+        height: 33px
+        background: url(../img/header/tel.png) center no-repeat
+        background-size: 100% 100%
+        background-color: #de6a5b
+        border-radius: 3px
+      &__rels
+        width: 100%
+        height: 38px
+        justify-content: center
+        align-items: flex-start
+        button
+          position: absolute
+          left: 50%
+          bottom: -320px
+          transform: translateX(-50%)
+          margin-left: 0
+          width: 145px
+          height: 38px
+      &__descr
+        display: none
+    &-menu
+      width: 100%
+      &:before
+        width: 100%
+      &__burger
+        margin-left: 0
+        top: 20px
+  .main
+    &-block
+      width: 100%
+      max-width: 320px
+      margin-left: auto
+      margin-right: auto
+      &__title
+        margin-top: 145px
+        margin-bottom: 17px
+        font-size: 40px
+        text-align: center
+        text-shadow: white 0 0 3px
+        line-height: 1
+      &__subtitle
+        font-size: 25px
+        text-align: center
+        color: #fff
+  .category
+    padding: 25px 0
+    &-title
+      margin-bottom: 5px
+    &-blocks
+      width: 100%
+    &-slider
+      margin-left: auto
+      margin-right: auto
+      width: 100%
+      max-width: 320px
+      .slick-current
+        .category-block__pic
+          transform: scale(1, 1)
+          margin-bottom: 25px
+    &-slide
+      width: 100%
+    &-block
+      width: 100%
+      margin-left: 0
+      margin-right: 0
+      padding-top: 25px
+      z-index: 5
+      &__pic
+        padding: 15px
+        width: 150px
+        height: 150px
+        margin-bottom: 25px
+      &__descr
+        display: block
+        width: 90%
+        margin-left: auto
+        margin-right: auto
+    &-slider
+      &:before
+        display: none
+  .slider-category
+    &_right
+      right: 0
+    &_left
+      left: 0
+  .stages
+    padding: 25px 0
+    &-title
+      margin-bottom: 25px
+    &-blocks
+      width: 100%
+      &:before
+        display: none
+    &-block:nth-child(5)
+       &:after
+         display: none
+    &-block
+      margin-left: auto
+      margin-right: auto
+      flex-wrap: wrap
+      max-width: 320px
+      margin-bottom: 40px
+      position: relative
+      &:after
+        content: ""
+        width: 0
+        height: 0
+        position: absolute 
+        left: 137px 
+        bottom: -34px
+        border-left: 24px solid transparent
+        border-right: 24px solid transparent
+        border-top: 24px solid #de6a5b
+      &__reverse
+        .stages-block__pic
+          order: 1
+        .stages-block__text
+          order: 2
+      &__pic
+      &__text
+        padding-top: 10px
+        background: #fff
+  .request
+    padding: 25px 0
+    &-blocks
+      width: 90%
+      &:before
+        width: 200px
+        border-left: 1px solid #DE6A5B
+        border-top: 1px solid #DE6A5B
+      &:after
+        width: 150px
+        border-right: 1px solid #DE6A5B
+        border-bottom: 1px solid #DE6A5B
+    &-block
+      &__input
+        margin-left: auto
+        margin-right: auto
+        margin-bottom: 10px
+        display: block
+      &__button
+        margin-top: 15px
+      &__small
+        width: 90%
+  .works
+    padding: 25px 0
+    &-title
+      margin-bottom: 25px
+    &-blocks
+      width: 100%
+    &-slider
+      display: none !important
+    &-slidermob
+      margin-bottom: 20px
+      display: flex
+      margin-left: auto
+      margin-right: auto
+      width: 100%
+      max-width: 400px
+      height: 240px
+      justify-content: center
+    &-block
+      a
+        outline: none
+      &__picmob
+        width: 100%
+        height: 240px
+        img
+          width: 100%
+          height: 100%
+          object-fit: cover
+  .slider-works
+    top: 50%
+    transform: translateY(-50%)
+  .features
+    padding: 25px 0
+    &-title
+      margin-bottom: 25px
+    &-blocks
+      width: 90%
+      flex-wrap: wrap
+    &-block
+      margin-left: auto
+      margin-right: auto
+      width: 100%
+      max-width: 320px
+      margin-bottom: 30px
+      &__title
+        width: 100%
+        height: 25px
+        margin-bottom: 3px
+  .about
+    padding: 25px 0
+    &-blocks
+      width: 90%
+      flex-wrap: wrap
+    &-block
+      &__forpics
+        display: none
+  .feedback
+    &-blocks
+      width: 100%
+    &-block
+      width: 100%
+      &:before
+        display: none
+      &__text
+        padding-top: 20px
+        width: 90%
+      &__feedback
+        max-height: 250px
+  .slider-feed
+    top: 21px
+    &_right
+      right: 5%
+    &_left
+      left: 5%
+  .partners
+    padding: 25px 0
+    &-title
+      margin-bottom: 25px
+    &-blocks
+      width: 90%
+    &-slider
+      img
+        filter: grayscale(0)
+  .slider-partners
+    &_right
+      right: 0
+    &_left
+      left: 0
+  .footer
+    &-blocks
+      width: 100%
+      flex-wrap: wrap
+    &-block
+      margin-bottom: 10px
+      width: 90%
+      margin-left: auto
+      margin-right: auto
+      display: flex
+      flex-wrap: wrap
+      justify-content: space-around
+      &__logo
+        width: 130px
+      &__tel
+        width: 100%
+      &__button
+        margin-right: auto
+      &__mail
+        margin-left: auto
+        margin-right: auto
+        width: 70%
+        text-align: center
+@media (max-width: 768px) and (min-width: 579px)
+  .header
+    background: url(../img/header/bg.jpg) bottom no-repeat
+    background-size: cover
+    height: 520px
+    &-block
+      padding: 5px 20px 0 58px
+      width: 100%
+      height: 68px
+      display: flex
+      position: relative
+      align-items: center
+      justify-content: space-between
+      &__logo
+        margin-right: 0
+        width: 130px
+      &__tel
+        text-align: center
+        a
+          font-size: 20px
+      &__rels
+        height: 38px
+        justify-content: flex-end
+        align-items: center
+        button
+          margin-left: 10px
+          width: 145px
+          height: 38px
+      &__descr
+        display: none
+    &-menu
+      &__burger
+        margin-left: 0
+        top: 20px
+  .main
+    &-block
+      width: 100%
+      margin-left: auto
+      margin-right: auto
+      &__title
+        margin-top: 165px
+        margin-bottom: -8px
+        text-align: center
+        text-shadow: white 0 0 3px
+        line-height: 1
+      &__subtitle
+        text-align: center
+        text-shadow: white 0 0 3px
+  .category
+    padding: 25px 0
+    &-title
+      margin-bottom: 5px
+    &-blocks
+      width: 100%
+    &-slider
+      margin-left: auto
+      margin-right: auto
+      width: 550px
+    &-block
+      margin-left: 0
+      margin-right: 0
+      z-index: 5
+    &-slider
+      &:before
+        width: 460px
+        left: 0
+        right: 0
+        margin-left: auto
+        margin-right: auto
+  .slider-category
+    &_right
+      right: 0
+    &_left
+      left: 0
+  .stages
+    padding: 25px 0
+    &-title
+      margin-bottom: 25px
+    &-blocks
+      width: 100%
+      &:before
+        display: none
+    &-block:nth-child(5)
+       &:after
+         display: none
+    &-block
+      margin-left: auto
+      margin-right: auto
+      flex-wrap: wrap
+      max-width: 320px
+      margin-bottom: 40px
+      position: relative
+      &:after
+        content: ""
+        width: 0
+        height: 0
+        position: absolute 
+        left: 137px 
+        bottom: -34px
+        border-left: 24px solid transparent
+        border-right: 24px solid transparent
+        border-top: 24px solid #de6a5b
+      &__reverse
+        .stages-block__pic
+          order: 1
+        .stages-block__text
+          order: 2
+      &__pic
+      &__text
+        padding-top: 10px
+        background: #fff
+  .request
+    padding: 25px 0
+    &-blocks
+      width: 90%
+      &:before
+        width: 200px
+        border-left: 1px solid #DE6A5B
+        border-top: 1px solid #DE6A5B
+      &:after
+        width: 150px
+        border-right: 1px solid #DE6A5B
+        border-bottom: 1px solid #DE6A5B
+    &-block
+      &__input
+        margin-left: auto
+        margin-right: auto
+        margin-bottom: 10px
+        display: block
+      &__button
+        margin-top: 15px
+      &__small
+        width: 90%
+  .works
+    padding: 25px 0
+    &-title
+      margin-bottom: 25px
+    &-blocks
+      width: 100%
+    &-slider
+      display: none !important
+    &-slidermob
+      margin-bottom: 20px
+      display: flex
+      margin-left: auto
+      margin-right: auto
+      width: 100%
+      max-width: 650px
+      height: 340px
+      justify-content: center
+    &-block
+      a
+        outline: none
+      &__picmob
+        width: 100%
+        height: 340px
+        img
+          width: 100%
+          height: 100%
+          object-fit: cover
+  .slider-works
+    top: 50%
+    transform: translateY(-50%)
+  .features
+    padding: 25px 0
+    &-title
+      margin-bottom: 25px
+    &-blocks
+      width: 90%
+      flex-wrap: wrap
+    &-block
+      margin-left: auto
+      margin-right: auto
+      width: 100%
+      max-width: 320px
+      margin-bottom: 30px
+      &__title
+        width: 100%
+        height: 25px
+        margin-bottom: 3px
+  .about
+    padding: 25px 0
+    &-blocks
+      width: 90%
+      flex-wrap: wrap
+    &-block
+      &__forpics
+        display: none
+  .feedback
+    &-blocks
+      width: 100%
+      max-width: 500px
+    &-block
+      width: 100%
+      &:before
+        display: none
+      &__text
+        padding-top: 20px
+        width: 90%
+      &__feedback
+        max-height: 250px
+  .slider-feed
+    top: 21px
+    &_right
+      right: 5%
+    &_left
+      left: 5%
+  .partners
+    padding: 25px 0
+    &-title
+      margin-bottom: 25px
+    &-blocks
+      width: 90%
+    &-slider
+      img
+        filter: grayscale(0)
+  .slider-partners
+    &_right
+      right: 0
+    &_left
+      left: 0
+  .footer
+    &-blocks
+      width: 100%
+      flex-wrap: wrap
+    &-block
+      width: 90%
+      margin-left: auto
+      margin-right: auto
+      display: flex
+      flex-wrap: wrap
+      justify-content: space-around
+      &__descr
+        padding-top: 10px
+      &__logo
+        width: 130px
+      &__tel
+        width: 50%
+      &__city
+        padding-right: 15px
+        width: 50%
+      &__button
+        margin-top: 10px
+        margin-right: auto
+      &__mail
+        margin-left: auto
+        margin-right: auto
+        width: 90%
+        text-align: center
 @media (max-width: 992px) and (min-width: 769px)
-	.header
-		&-block
-			&__logo
-				width: 400px
-	.features
-		&-blocks
-			max-width: 800px
-	.advantages
-		&-blocks
-			max-width: 800px
-		
-	.progress
-		padding-top: 30px
-		&-slider
-			height: 480px
-			&__pic
-				height: 480px
-	.reviews
-		&-block
-			&__text
-				height: 130px
-
-@media (max-width: 1023px) and (min-width: 993px)
-	.header
-		position: relative
-		opacity: 1
-		&-blocks
-			padding-top: 40px
-			width: 95%
-		&-menu
-			height: 40px
-			padding-top: 0
-			display: flex
-			top: 0
-			background: #fff
-			width: 100%
-			position: fixed
-			flex-wrap: nowrap
-			justify-content: space-between
-			opacity: 1
-			z-index: 10
-			&__block1, &__block2, &__block3, &__block4, &__block5
-				margin-left: auto
-				margin-right: auto
-				margin-bottom: 0
-				display: flex
-				align-items: center
-				height: 40px
-				&:hover
-					cursor: pointer
-				&:hover .header-menu__ref
-					color: #000
-			&__block1
-				&:hover .header-menu__ref
-					color: #b1cc3c
-			&__block3menu
-				left: 0
-				top: 40px
-				opacity: 1
-				transform: scaleY(1)
-				display: none
-				text-align: left
-				position: absolute
-				padding: 5px 0 5px 0
-				width: 200px
-				background: rgba(177, 204, 60, 1)
-			&__refmenu
-				&:hover
-					color: #000
-			&__ham
-				display: none
-				z-index: 15
-			&__ref3
-				display: none
-			&__refmobile
-				display: flex
-				margin-bottom: 0
-				height: auto
-		&-block
-			&__preview
-				flex-wrap: wrap
-				justify-content: center
-			&__logo
-				width: 500px
-			&__company
-				font-size: 16px
-			&__button
-				display: block
-				&:hover
-					background: #fff
-	.window
-		&-offer
-			top: 3%
-	.main
-		padding-top: 10px
-		&-slider
-			&__description
-				width: 900px
-			&__text
-				margin-top: 50px
-			&__title
-				width: 100%
-				font-weight: 600
-			&__subtitle
-				width: 100%
-				font-size: 16px
-				padding-top: 30px
-				margin-bottom: 50px
-			&__buttons
-				flex-wrap: wrap
-			&__catalog
-				margin-left: auto
-				margin-right: auto
-				margin-bottom: 10px
-				&:hover
-					background: #b1cc3c
-			&__order
-				margin-left: auto
-				margin-right: auto
-				&:hover
-					background: #fff
-			&__list
-				width: 95%
-				margin-left: auto
-				margin-right: auto
-			&__row
-				font-size: 16px
-	.slider-main
-		top: 44%
-		&_right
-			right: 1px
-		&_left
-			left: 1px
-	.features
-		&-title
-			width: 100%
-		&-blocks
-			max-width: 800px
-			width: 100%
-			justify-content: center
-		&-block1, &-block2, &-block3, &-block4, &-block5, &-block6, &-block7, &-block8
-			margin-left: 10px
-			margin-right: 10px
-		&-block
-			&__title
-				padding-top: 240px
-				margin-bottom: 15px
-			&__button
-				transform: scaleY(1)
-				&:hover
-					background: #b1cc3c
-		&-block1, &-block2, &-block3, &-block4, &-block5, &-block6, &-block7, &-block8
-			&:hover
-				background-size: 100%
-	.advantages
-		&-title
-			width: 100%
-		&-blocks
-			max-width: 800px
-			width: 100%
-			justify-content: center
-		&-block
-			margin-left: 10px
-			margin-right: 10px
-			width: 90%
-			max-width: 340px
-			box-shadow: 0 0 50px rgba(0,0,0,0.25)
-			&__pic
-				display: none
-			&__text
-				width: 100%
-				text-align: center
-	.gallery
-		&-title
-			width: 100%
-	.progress
-		padding-top: 30px
-		&-title
-			width: 100%
-		&-blocks
-			width: 100%
-		&-slider
-			height: 480px
-			&__pic
-				height: 480px
-		&-text
-			padding-top: 50px
-			width: 90%
-			margin-left: auto
-			margin-right: auto
-			left: 0
-			right: 0
-			&__title
-				font-size: 30px
-			&__subtitle
-				font-size: 20px
-	.reviews
-		&-title
-			width: 100%
-		&-blocks
-			width: 100%
-		&-slider
-			width: 85%
-		&-block
-			width: 85%
-			&__name
-				text-align: center
-			&__text
-				height: 130px
-			&__buttons
-				flex-wrap: wrap
-			&__rel
-				margin-bottom: 10px
-				&:hover
-					background: #fff
-	.reviews-arrow
-		top: 31px
-		&_right
-			right: 30px
-		&_left
-			left: 30px
-	.footer
-		&-blocks
-			width: 100%
-		&-menu
-			display: none
-		&-block
-			&__preview
-				flex-wrap: wrap
-				justify-content: center
-			&__button
-				display: block
-				&:hover
-					background: #fff
-
-@media (max-width: 1200px) and (min-width: 1024px)
-	.header
-		position: relative
-		opacity: 1
-		&-blocks
-			padding-top: 5px
-			width: 95%
-		&-menu
-			width: 580px
-			height: 40px
-			display: flex
-			background: #fff
-			flex-wrap: nowrap
-			justify-content: space-between
-			opacity: 1
-			z-index: 10
-			&__refmenu
-				&:hover
-					color: #000
-			&__ham
-				display: none
-				z-index: 15
-			&__ref3
-			&__refmobile
-				display: none
-		&-block
-			&__preview
-				flex-wrap: wrap
-				justify-content: space-between
-			&__logo
-				width: 220px
-			&__company
-				font-size: 15px
-			&__button
-				display: block
-	.window
-		&-offer
-			top: 2%
-	.main
-		padding-top: 10px
-		&-slider
-			&__description
-				width: 900px
-			&__text
-				margin-top: 50px
-			&__title
-				width: 100%
-				font-weight: 600
-			&__subtitle
-				width: 100%
-				font-size: 16px
-				padding-top: 30px
-				margin-bottom: 50px
-			&__buttons
-				flex-wrap: wrap
-			&__catalog
-				margin-left: auto
-				margin-right: auto
-				margin-bottom: 10px
-			&__order
-				margin-left: auto
-				margin-right: auto
-			&__list
-				width: 95%
-				margin-left: auto
-				margin-right: auto
-			&__row
-				font-size: 16px
-	.slider-main
-		top: 44%
-		&_right
-			right: 1px
-		&_left
-			left: 1px
-	.features
-		&-title
-			width: 100%
-		&-blocks
-			width: 800px
-			justify-content: center
-		&-block1, &-block2, &-block3, &-block4, &-block5, &-block6, &-block7, &-block8
-			margin-left: 10px
-			margin-right: 10px
-	.advantages
-		&-title
-			width: 100%
-		&-blocks
-			width: 100%
-			justify-content: center
-		&-block
-			margin-left: 10px
-			margin-right: 10px
-			width: 90%
-			max-width: 340px
-			&__pic
-				display: none
-			&__text
-				width: 100%
-				text-align: center
-	.gallery
-		&-title
-			width: 100%
-	.progress
-		padding-top: 0
-		&-title
-			width: 100%
-		&-blocks
-			width: 100%
-		&-slider
-			height: 500px
-			&__pic
-				height: 500px
-		&-text
-			padding-top: 50px
-			width: 90%
-			margin-left: auto
-			margin-right: auto
-			left: 0
-			right: 0
-	.reviews
-		&-title
-			width: 100%
-		&-blocks
-			width: 100%
-		&-slider
-			width: 900px
-		&-block
-			width: 900px
-			&__name
-				text-align: center
-			&__text
-				height: 170px
-			&__buttons
-				flex-wrap: wrap
-			&__rel
-				margin-bottom: 10px
-	.reviews-arrow
-		top: 31px
-		&_right
-			right: 30px
-		&_left
-			left: 30px
-	.footer
-		&-blocks
-			padding-top: 5px
-			width: 95%
-		&-menu
-			width: 580px
-			height: 40px
-			display: flex
-			background: #fff
-			flex-wrap: nowrap
-			justify-content: space-between
-			opacity: 1
-			z-index: 10
-		&-block
-			&__preview
-				flex-wrap: wrap
-				justify-content: space-between
-			&__logo
-				width: 220px
-			&__company
-				font-size: 15px
-			&__button
-				display: block
-		
+  .header
+    height: 520px
+    &-block
+      padding: 5px 20px 0 58px
+      width: 100%
+      height: 68px
+      display: flex
+      position: relative
+      align-items: center
+      justify-content: space-between
+      &__logo
+        margin-right: 0
+        width: 155px
+      &__tel
+        text-align: center
+        a
+          font-size: 22px
+      &__rels
+        height: 38px
+        justify-content: flex-end
+        align-items: center
+        button
+          margin-left: 10px
+          width: 155px
+          height: 43px
+      &__descr
+        display: none
+    &-menu
+      &__burger
+        margin-left: 0
+        top: 20px
+  .main
+    &-block
+      width: 95%
+      margin-left: auto
+      margin-right: auto
+      &__title
+        margin-top: 165px
+        margin-bottom: -8px
+        text-shadow: white 0 0 3px
+        line-height: 1
+      &__subtitle
+        text-shadow: white 0 0 3px
+  .category
+    padding: 25px 0
+    &-title
+      margin-bottom: 5px
+    &-blocks
+      width: 100%
+    &-slider
+      margin-left: auto
+      margin-right: auto
+      width: 550px
+    &-block
+      margin-left: 0
+      margin-right: 0
+      z-index: 5
+    &-slider
+      &:before
+        width: 460px
+        left: 0
+        right: 0
+        margin-left: auto
+        margin-right: auto
+  .slider-category
+    &_right
+      right: 0
+    &_left
+      left: 0
+  .stages
+    padding: 25px 0
+    &-title
+      margin-bottom: 25px
+  .request
+    padding: 25px 0
+    &-blocks
+      width: 90%
+      max-width: 950px
+  .works
+    padding: 25px 0
+    &-title
+      margin-bottom: 25px
+    &-blocks
+      width: 750px
+    &-slider
+      width: 750px
+    &-block
+      &__small
+        width: 445px
+        height: 300px
+      &__pic
+        width: 220px
+        height: 145px
+      &__picbig
+        width: 300px
+        height: 295px
+    &-slidermob
+      display: none !important
+  .slider-works
+    top: 107px
+  .features
+    padding: 25px 0
+    &-title
+      margin-bottom: 25px
+    &-blocks
+      width: 90%
+      flex-wrap: wrap
+    &-block
+      margin-left: auto
+      margin-right: auto
+      width: 100%
+      max-width: 320px
+      margin-bottom: 30px
+      &__title
+        width: 100%
+        height: 25px
+        margin-bottom: 3px
+  .about
+    padding: 25px 0
+    &-blocks
+      width: 95%
+      flex-wrap: wrap
+    &-block
+      &__text
+        width: 330px
+      &__forpics
+        width: 350px
+      &__pic
+        width: 150px
+        height: 150px
+  .feedback
+    &-blocks
+      width: 100%
+      max-width: 500px
+    &-block
+      width: 100%
+      &:before
+        display: none
+      &__text
+        padding-top: 20px
+        width: 90%
+      &__feedback
+        max-height: 250px
+  .slider-feed
+    top: 21px
+    &_right
+      right: 5%
+    &_left
+      left: 5%
+  .partners
+    padding: 25px 0
+    &-title
+      margin-bottom: 25px
+    &-blocks
+      width: 95%
+    &-slider
+      img
+        filter: grayscale(0)
+  .slider-partners
+    &_right
+      right: 0
+    &_left
+      left: 0
+  .footer
+    &-blocks
+      width: 90%
+      flex-wrap: wrap
+      align-items: center
+    &-block
+      width: 50%
+      margin-left: auto
+      margin-right: auto
+      display: flex
+      flex-wrap: wrap
+      &__descr
+        width: 100%
+      &__logo
+        width: 155px
+      &__tel
+        text-align: right
+        width: 100%
+      &__city
+        text-align: right
+        width: 100%
+      &__button
+        margin-top: 10px
+        margin-right: auto
+      &__mail
+        margin-left: auto
+        margin-right: auto
+        width: 90%
+        text-align: center
+@media (max-width: 1024px) and (min-width: 993px)
+  .header
+    height: 520px
+    &-block
+      padding: 0 20px 0 58px
+      width: 100%
+      height: 80px
+      display: flex
+      position: relative
+      align-items: center
+      justify-content: space-between
+      &__logo
+        margin-right: 10px
+      &__rels
+        height: 38px
+        justify-content: flex-end
+        align-items: center
+        button
+          margin-left: 10px
+    &-menu
+      &__burger
+        margin-left: 0
+        top: 23px
+  .main
+    &-block
+      width: 94%
+      margin-left: auto
+      margin-right: auto
+      &__title
+        margin-top: 165px
+        text-shadow: white 0 0 3px
+        line-height: 1
+      &__subtitle
+        padding-left: 2px
+        text-shadow: white 0 0 3px
+  .category
+    &-blocks
+      width: 100%
+    &-slider
+      margin-left: auto
+      margin-right: auto
+      width: 990px
+    &-block
+      margin-left: 0
+      margin-right: 0
+      z-index: 5
+    &-slider
+      &:before
+        width: 880px
+        left: 0
+        right: 0
+        margin-left: auto
+        margin-right: auto
+  .slider-category
+    &_right
+      right: 370px
+    &_left
+      left: 370px
+  .works
+    &-blocks
+      width: 990px
+    &-slider
+      width: 990px
+    &-block
+      &__small
+        width: 585px
+        height: 400px
+      &__pic
+        width: 290px
+        height: 195px
+      &__picbig
+        width: 400px
+        height: 395px
+  .features
+    &-blocks
+      width: 90%
+      flex-wrap: wrap
+    &-block
+      margin-left: auto
+      margin-right: auto
+      width: 100%
+      max-width: 320px
+      margin-bottom: 30px
+      &__title
+        width: 100%
+        height: 25px
+        margin-bottom: 3px
+  .about
+    &-blocks
+      width: 95%
+      flex-wrap: wrap
+    &-block
+      &__text
+        width: 450px
+      &__forpics
+        width: 450px
+      &__pic
+        width: 200px
+        height: 200px
+  .feedback
+    &-blocks
+      width: 100%
+  .slider-feed
+    top: 32px
+  .partners
+    padding: 25px 0
+    &-title
+      margin-bottom: 25px
+    &-blocks
+      width: 95%
+  .slider-partners
+    &_right
+      right: 0
+    &_left
+      left: 0
+  .footer
+    &-blocks
+      width: 90%
+      flex-wrap: wrap
+      align-items: center
+    &-block
+      width: 50%
+      margin-left: auto
+      margin-right: auto
+      display: flex
+      flex-wrap: wrap
+      &__descr
+        width: 100%
+      &__logo
+        width: 155px
+      &__tel
+        text-align: right
+        width: 100%
+      &__city
+        text-align: right
+        width: 100%
+      &__button
+        margin-top: 10px
+        margin-right: auto
+      &__mail
+        margin-left: auto
+        margin-right: auto
+        width: 90%
+        text-align: center
+@media (max-width: 1200px) and (min-width: 1025px)
+  .header
+    &-block
+      padding: 0 20px 0 58px
+      width: 100%
+    &-menu
+      &__burger
+        margin-left: 0
+  .main
+    &-block
+      width: 90%
+      margin-left: auto
+      margin-right: auto
+      &__title
+        text-shadow: white 0 0 3px
+      &__subtitle
+        padding-left: 2px
+        text-shadow: white 0 0 3px
+  .category
+    &-blocks
+      width: 100%
+    &-slider
+      margin-left: auto
+      margin-right: auto
+      width: 990px
+    &-block
+      margin-left: 0
+      margin-right: 0
+      z-index: 5
+    &-slider
+      &:before
+        width: 880px
+        left: 0
+        right: 0
+        margin-left: auto
+        margin-right: auto
+  .slider-category
+    &_right
+      right: 370px
+    &_left
+      left: 370px
+  .works
+    &-blocks
+      width: 990px
+    &-slider
+      width: 990px
+    &-block
+      &__small
+        width: 585px
+        height: 400px
+      &__pic
+        width: 290px
+        height: 195px
+      &__picbig
+        width: 400px
+        height: 395px
+  .features
+    &-blocks
+      width: 90%
+      flex-wrap: wrap
+    &-block
+      margin-left: auto
+      margin-right: auto
+      width: 100%
+      max-width: 320px
+      margin-bottom: 30px
+      &__title
+        width: 100%
+        height: 25px
+        margin-bottom: 3px
+  .about
+    &-blocks
+      width: 95%
+      flex-wrap: wrap
+    &-block
+      &__text
+        width: 450px
+      &__forpics
+        width: 450px
+      &__pic
+        width: 200px
+        height: 200px
+  .feedback
+    &-blocks
+      width: 100%
+  .slider-feed
+    top: 32px
+  .partners
+    &-blocks
+      width: 95%
+      max-width: 1050px
+  .slider-partners
+    &_right
+      right: 0
+    &_left
+      left: 0
+  .footer
+    &-blocks
+      width: 88%
+@media (max-width: 1330px) and (min-width: 1201px)
+  .header
+    &-block
+      padding: 0 20px 0 58px
+      width: 100%
+    &-menu
+      &__burger
+        margin-left: 0

@@ -1,0 +1,120 @@
+.works
+  background: #fff
+  padding: 40px 0
+  &-title
+    margin-bottom: 50px
+    width: 100%
+    text-align: center
+    text-transform: uppercase
+    font-size: 24px
+    color: #223a5e
+    font-weight: 400
+  &-blocks
+    width: 1170px
+    margin-left: auto
+    margin-right: auto
+  &-slider
+    .slick-prev
+      top: 47%
+    .slick-next
+      top: 47%
+    .slick-prev:before
+      color: #de6a5b
+    .slick-next:before
+      color: #de6a5b
+  &-slide
+    outline: none
+  &-block
+    display: flex
+    justify-content: space-between
+    margin-bottom: 20px
+    a
+      outline: none
+    &__small
+      width: 700px
+      height: 390px
+      display: flex
+      justify-content: space-between
+      flex-wrap: wrap
+      a
+        outline: none
+    &__pic
+      margin-bottom: 5px
+      width: 347px
+      height: 195px
+      position: relative
+      transition: all linear 0.35s
+      &:before
+        content: ''
+        background: rgba(0, 0, 0, 0.5)
+        width: 100%
+        height: 100%
+        position: absolute
+        top: 0
+        left: 0
+        cursor: pointer
+        transition: all linear 0.35s
+      img
+        width: 100%
+        height: 100%
+        object-fit: cover
+    &__picbig
+      width: 465px
+      height: 395px
+      margin-bottom: 5px
+      position: relative
+      cursor: pointer
+      transition: all linear 0.35s
+      &:before
+        content: ''
+        background: rgba(0, 0, 0, 0.5)
+        width: 100%
+        height: 100%
+        position: absolute
+        top: 0
+        left: 0
+        transition: all linear 0.35s
+      img
+        width: 100%
+        height: 100%
+        object-fit: cover
+    &__button
+      display: flex
+      justify-content: center
+      align-items: center
+      margin-left: auto
+      margin-right: auto
+      background: #de6a5b
+      width: 170px
+      height: 45px
+      border: 1px solid #de6a5b
+      border-radius: 1px
+      color: #fff
+      font-size: 18px
+      text-transform: uppercase
+      transition: all linear 0.35s
+      font-family: Futura PT Book, sans-serif
+    &__rel
+      margin-left: auto
+      margin-right: auto
+      width: 170px
+      height: 45px
+.slider-works
+  position: absolute
+  top: 158px
+  height: 80px
+  width: 20px
+  border: none
+  z-index: 10
+  &_right
+    transition: all linear 0.35s
+    right: 0
+    background: url(../img/works/arrow-right.png) center no-repeat
+    background-size: 6px 19px
+    background-color: #de6a5b
+  &_left
+    transition: all linear 0.35s
+    left: 0
+    background: url(../img/works/arrow-left.png) center no-repeat
+    background-size: 6px 19px
+    background-color: #de6a5b

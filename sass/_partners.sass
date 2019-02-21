@@ -1,0 +1,46 @@
+.partners
+  padding: 40px 0
+  &-title
+    margin-bottom: 50px
+    width: 100%
+    text-align: center
+    text-transform: uppercase
+    font-size: 24px
+    color: #223a5e
+    font-weight: 400
+  &-blocks
+    margin-left: auto
+    margin-right: auto
+    width: 1050px
+  &-slider
+    height: 170px
+    .slick-track
+      display: flex
+      justify-content: space-around
+      align-items: center
+      a
+        outline: none
+        margin: 0 10px
+    img
+      margin-left: auto
+      margin-right: auto
+      transition: all linear 0.35s
+      max-width: 170px
+      filter: grayscale(100%)
+.slider-partners
+  position: absolute
+  top: 50px
+  height: 30px
+  width: 30px
+  border: none
+  z-index: 10
+  &_right
+    transition: all linear 0.35s
+    right: -50px
+    background: url(../img/category/arr-righthov.png) center no-repeat
+    background-size: 100% 100%
+  &_left
+    transition: all linear 0.35s
+    left: -50px
+    background: url(../img/category/arr-lefthov.png) center no-repeat
+    background-size: 100% 100%
