@@ -1,0 +1,742 @@
+*,
+*:after,
+*::before {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  background: #000;
+  color: #fff;
+  font-family: 'PT Sans', sans-serif;
+}
+
+body .order {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+body .order-blocks {
+  margin-top: 20px;
+  width: 100%;
+  outline: none;
+}
+
+body .order-blocks:focus .order-main {
+  position: relative;
+  display: block;
+}
+
+body .order-blocks:hover .order-header {
+  background-color: #e6b728;
+  color: #000;
+  cursor: pointer;
+}
+
+body .order-blocks:focus .order-header {
+  background-color: #e6b728;
+  color: #000;
+}
+
+body .order-blocks:active .order-header {
+  background-color: #e6b728;
+  color: #000;
+}
+
+body .order-blocks:focus .order-header__arrow {
+  background: url("../img/main/angle-down.png") center no-repeat;
+}
+
+body .order-blocks:active .order-header__arrow {
+  background: url("../img/main/angle-down.png") center no-repeat;
+}
+
+body .order-header {
+  padding-left: 31px;
+  padding-right: 31px;
+  width: 100%;
+  height: 80px;
+  position: relative;
+  background-color: #212121;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+body .order-header__text {
+  font-size: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+body .order-header__angle {
+  padding-left: 31px;
+  padding-right: 31px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+body .order-header__arrow {
+  background: url("../img/main/angle-up.png") center no-repeat;
+  background-size: 100%;
+  width: 14px;
+  height: 8px;
+}
+
+body .order-main {
+  display: none;
+  position: absolute;
+  width: 100%;
+}
+
+body .payment {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+body .payment-blocks {
+  margin-top: 15px;
+  width: 100%;
+  outline: none;
+}
+
+body .payment-blocks:focus .payment-main {
+  position: relative;
+  display: block;
+}
+
+body .payment-blocks:hover .payment-header {
+  background-color: #e6b728;
+  color: #000;
+  cursor: pointer;
+}
+
+body .payment-blocks:focus .payment-header {
+  background-color: #e6b728;
+  color: #000;
+}
+
+body .payment-blocks:active .payment-header {
+  background-color: #e6b728;
+  color: #000;
+}
+
+body .payment-blocks:focus .payment-header__arrow {
+  background: url("../img/main/angle-down.png") center no-repeat;
+}
+
+body .payment-blocks:active .payment-header__arrow {
+  background: url("../img/main/angle-down.png") center no-repeat;
+}
+
+body .payment-header {
+  padding-left: 31px;
+  padding-right: 31px;
+  width: 100%;
+  height: 80px;
+  position: relative;
+  background-color: #212121;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+body .payment-header__text {
+  font-size: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+body .payment-header__angle {
+  padding-left: 31px;
+  padding-right: 31px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+body .payment-header__arrow {
+  background: url("../img/main/angle-up.png") center no-repeat;
+  background-size: 100%;
+  width: 14px;
+  height: 8px;
+}
+
+body .payment-main {
+  display: none;
+  position: absolute;
+  width: 100%;
+}
+
+body .banks {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+body .banks-blocks {
+  margin-top: 15px;
+  width: 100%;
+  outline: none;
+}
+
+body .banks-blocks:focus .banks-main {
+  position: relative;
+  display: block;
+}
+
+body .banks-blocks:hover .banks-header {
+  background-color: #e6b728;
+  color: #000;
+  cursor: pointer;
+}
+
+body .banks-blocks:focus .banks-header {
+  background-color: #e6b728;
+  color: #000;
+}
+
+body .banks-blocks:active .banks-header {
+  background-color: #e6b728;
+  color: #000;
+}
+
+body .banks-blocks:focus .banks-header__arrow {
+  background: url("../img/main/angle-down.png") center no-repeat;
+}
+
+body .banks-blocks:active .banks-header__arrow {
+  background: url("../img/main/angle-down.png") center no-repeat;
+}
+
+body .banks-header {
+  padding-left: 31px;
+  padding-right: 31px;
+  width: 100%;
+  height: 80px;
+  position: relative;
+  background-color: #212121;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+body .banks-header__text {
+  font-size: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+body .banks-header__angle {
+  padding-left: 31px;
+  padding-right: 31px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+body .banks-header__arrow {
+  background: url("../img/main/angle-up.png") center no-repeat;
+  background-size: 100%;
+  width: 14px;
+  height: 8px;
+}
+
+body .banks-main {
+  display: none;
+  position: absolute;
+  width: 100%;
+}
+
+body .prepay-block {
+  margin-top: 25px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 1200px;
+  height: 169px;
+  background-color: #121212;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+body .prepay-block__text {
+  font-size: 15px;
+  text-align: right;
+}
+
+body .prepay-block__form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+body .prepay-block__input {
+  margin-left: 50px;
+  width: 160px;
+  height: 65px;
+  background-color: #212121;
+  border: none;
+  outline: none;
+  color: #fff;
+  font-size: 15px;
+  text-align: center;
+}
+
+body .prepay-block__button {
+  width: 140px;
+  height: 65px;
+  background-color: #e6b729;
+  color: #000;
+  border: none;
+  outline: none;
+  font-size: 15px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+body .payplace-blocks {
+  margin-top: 32px;
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+body .payplace-block1 {
+  margin-bottom: 10px;
+  padding-top: 20px;
+  padding-bottom: 40px;
+  width: 395px;
+  background-color: #121212;
+}
+
+body .payplace-block2 {
+  margin-bottom: 10px;
+  padding-top: 20px;
+  padding-bottom: 40px;
+  width: 395px;
+  background-color: #121212;
+}
+
+body .payplace-block3 {
+  margin-bottom: 10px;
+  padding-top: 20px;
+  padding-bottom: 40px;
+  width: 395px;
+  background-color: #121212;
+}
+
+body .payplace-block__title {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 21px;
+  padding-bottom: 20px;
+  width: 87%;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  color: #e6b728;
+  text-transform: uppercase;
+  border-bottom: 1px solid #212121;
+}
+
+body .payplace-block__percent {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 5px;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  border: 1px solid #6b6b6b;
+  font-size: 20px;
+  color: #6b6b6b;
+  border-radius: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+body .payplace-block__subtitle {
+  margin-bottom: 53px;
+  text-align: center;
+  color: #6b6b6b;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+body .payplace-block__buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+body .payplace-block__button {
+  width: 160px;
+  height: 50px;
+  background-color: #212121;
+  color: #6b6b6b;
+  border: none;
+  outline: none;
+  font-size: 15px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+body .payplace-block__buttonx {
+  display: none;
+  width: 160px;
+  height: 50px;
+  background-color: #212121;
+  color: #6b6b6b;
+  border: none;
+  outline: none;
+  font-size: 15px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+body .payplace-descrone {
+  margin-bottom: 20px;
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  display: none;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+}
+
+body .payplace-descrone__descriptions {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #121212;
+}
+
+body .payplace-descrone__descr1 {
+  padding-top: 35px;
+  padding-left: 50px;
+  padding-right: 55px;
+  width: 390px;
+  text-align: justify;
+  font-size: 15px;
+}
+
+body .payplace-descrone__descr2 {
+  display: block;
+  margin-left: 18px;
+  padding-top: 35px;
+  padding-left: 50px;
+  padding-right: 55px;
+  width: 390px;
+  text-align: justify;
+  font-size: 15px;
+}
+
+body .payplace-descrone__button {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 240px;
+  height: 65px;
+  background-color: #212121;
+  color: #fff;
+  border: none;
+  outline: none;
+  font-size: 15px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+body .payplace-descrtwo {
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  display: none;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+}
+
+body .payplace-descrtwo__descriptions {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #121212;
+}
+
+body .payplace-descrtwo__descr1 {
+  padding-top: 40px;
+  padding-left: 50px;
+  padding-right: 50px;
+  width: 390px;
+  text-align: justify;
+  font-size: 15px;
+}
+
+body .payplace-descrtwo__descr2 {
+  display: block;
+  margin-left: 18px;
+  padding-top: 40px;
+  padding-left: 50px;
+  padding-right: 50px;
+  width: 390px;
+  text-align: justify;
+  font-size: 15px;
+}
+
+body .payplace-descrtwo__button {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 240px;
+  height: 65px;
+  background-color: #212121;
+  color: #fff;
+  border: none;
+  outline: none;
+  font-size: 15px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+body .payplace-descrthree {
+  margin-bottom: 20px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  display: none;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  background-color: #121212;
+}
+
+body .payplace-descrthree__descriptions {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #121212;
+}
+
+body .payplace-descrthree__descr1 {
+  padding-top: 40px;
+  padding-left: 50px;
+  padding-right: 50px;
+  width: 390px;
+  background-color: #212121;
+  text-align: justify;
+  font-size: 15px;
+}
+
+body .payplace-descrthree__descr2 {
+  display: block;
+  margin-left: 15px;
+  padding-top: 70px;
+  padding-left: 50px;
+  padding-right: 50px;
+  width: 390px;
+  background-color: #212121;
+  text-align: justify;
+  font-size: 15px;
+}
+
+body .payplace-descrthree__descr3 {
+  display: block;
+  margin-left: 14px;
+  width: 390px;
+  text-align: justify;
+  font-size: 15px;
+}
+
+body .payplace-descr3__one {
+  position: relative;
+  width: 390px;
+  margin-bottom: 13px;
+  padding-top: 45px;
+  padding-left: 45px;
+  padding-right: 55px;
+  padding-bottom: 25px;
+  background-color: #212121;
+}
+
+body .payplace-descr3__one::after {
+  content: '';
+  position: absolute;
+  right: 48%;
+  top: 100%;
+  border: 16px solid transparent;
+  border-top: 13px solid #212121;
+}
+
+body .payplace-descr3__two {
+  padding-top: 40px;
+  padding-left: 45px;
+  padding-right: 55px;
+  padding-bottom: 50px;
+  width: 390px;
+  overflow-y: scroll;
+  background-color: #212121;
+}
+
+body p {
+  margin-bottom: 25px;
+  line-height: 1.6;
+}
+
+body ul {
+  margin-bottom: 31px;
+}
+
+body li {
+  margin-bottom: 13px;
+  list-style-type: disc;
+}
+
+body a {
+  color: #fff;
+}
+
+body span {
+  font-weight: 600;
+}
+
+body .span3 {
+  margin-bottom: 70px;
+}
+
+body .off {
+  margin-bottom: 0;
+}
+
+body .footer-block {
+  margin-top: 123px;
+  margin-bottom: 200px;
+  width: 100%;
+}
+
+body .footer-block__buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+body .footer-block__button1 {
+  width: 290px;
+  height: 65px;
+  background-color: #e6b729;
+  color: #000;
+  border: none;
+  outline: none;
+  font-size: 13px;
+  text-transform: uppercase;
+  text-align: center;
+  position: relative;
+}
+
+body .footer-block__button1::after {
+  content: '';
+  position: absolute;
+  left: -53px;
+  top: -1px;
+  border: 33px solid transparent;
+  border-right: 20px solid #e6b729;
+}
+
+body .footer-block__button2 {
+  margin-left: 15px;
+  width: 300px;
+  height: 65px;
+  background-color: #e6b729;
+  color: #000;
+  border: none;
+  outline: none;
+  font-size: 13px;
+  text-transform: uppercase;
+  text-align: center;
+}
