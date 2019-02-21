@@ -1,204 +1,95 @@
-$('.category-slider').slick({
-  slidesToShow: 3,
-  slidesToScroll: 1,
-  arrows: true,
-  prevArrow: '<div class="slider-category slider-category_left"></div>',
-  nextArrow: '<div class="slider-category slider-category_right"></div>',
-  centerMode: true,
-  infinite: true,
-  autoplay: false,
-  pauseOnHover: false,
-  centerPadding: '250px',
-  draggable: false,
-  responsive: [
-    {
-      breakpoint: 579,
-      settings: {
-        centerMode: false,
-        slidesToShow: 1,
-        slidesToScroll: 1
-      }
-    },
-    {
-      breakpoint: 993,
-      settings: {
-        centerMode: true,
-        centerPadding: '0',
-        slidesToShow: 3,
-        slidesToScroll: 1
-      }
-    },
-    {
-      breakpoint: 1200,
-      settings: {
-        centerMode: true,
-        centerPadding: '200px',
-        slidesToShow: 3,
-        slidesToScroll: 1
-      }
+window.addEventListener('DOMContentLoaded', function() {
+    'use ctrict';
+
+    // Табы
+    let tab = document.querySelectorAll('.info-header-tab'),
+        info = document.querySelector('.info-header'),
+        tabContent = document.querySelectorAll('.info-tabcontent');
+
+    function hideTabContent (a) {
+        for (let i = a; i < tabContent.length; i++) {
+            tabContent[i].classList.remove('show');
+            tabContent[i].classList.add('hide');
+        }
     }
-  ],
-  focusOnSelect: true
-});
 
-$('.works-slider').slick({
-  slidesToShow: 1,
-  slidesToScroll: 1,
-  arrows: true,
-  prevArrow: '<div class="slider-works slider-works_left"></div>',
-  nextArrow: '<div class="slider-works slider-works_right"></div>',
-  infinite: true,
-  autoplay: false,
-  pauseOnHover: false,
-  draggable: false,
-  focusOnSelect: false
-});
+    hideTabContent(1);
 
-$('.works-slidermob').slick({
-  slidesToShow: 1,
-  slidesToScroll: 1,
-  arrows: true,
-  prevArrow: '<div class="slider-works slider-works_left"></div>',
-  nextArrow: '<div class="slider-works slider-works_right"></div>',
-  infinite: true,
-  autoplay: false,
-  pauseOnHover: false,
-  draggable: false,
-  focusOnSelect: false
-});
-
-$('.feedback-block__slider').slick({
-  slidesToShow: 1,
-  slidesToScroll: 1,
-  arrows: true,
-  prevArrow: '<div class="slider-feed slider-feed_left"></div>',
-  nextArrow: '<div class="slider-feed slider-feed_right"></div>',
-  infinite: true,
-  dots: false,
-  autoplay: false,
-  pauseOnHover: false,
-  draggable: false,
-  fade: true,
-  cssEase: 'linear',
-  speed: 1000
-});
-
-$('.partners-slider').slick({
-  slidesToShow: 5,
-  slidesToScroll: 5,
-  arrows: true,
-  prevArrow: '<div class="slider-partners slider-partners_left"></div>',
-  nextArrow: '<div class="slider-partners slider-partners_right"></div>',
-  infinite: true,
-  autoplay: false,
-  pauseOnHover: false,
-  draggable: false,
-  responsive: [
-    {
-      breakpoint: 579,
-      settings: {
-        slidesToShow: 1,
-        slidesToScroll: 1
-      }
-    },
-    {
-      breakpoint: 769,
-      settings: {
-        slidesToShow: 2,
-        slidesToScroll: 2
-      }
-    },
-    {
-      breakpoint: 993,
-      settings: {
-        slidesToShow: 3,
-        slidesToScroll: 3
-      }
-    },
-    {
-      breakpoint: 1200,
-      settings: {
-        slidesToShow: 4,
-        slidesToScroll: 4
-      }
+    function showTabContent(b) {
+        if (tabContent[b].classList.contains('hide')) {
+            tabContent[b].classList.remove('hide');
+            tabContent[b].classList.add('show');
+        }
     }
-  ],
-  focusOnSelect: false
-});
 
-$('a[href^="#"]').click(function () {
-  var target = $(this).attr('href');
-  $('html, body').animate({
-    scrollTop: $(target).offset().top - 0
-  }, 1200);
-  return false;
-});
+    info.addEventListener('click', function (e) {
+        let target = e.target;
+        if (target && target.classList.contains('info-header-tab')) {
+            for(let i = 0; i < tab.length; i++) {
+                if (target == tab[i]) {
+                    hideTabContent(0);
+                    showTabContent(i);
+                    break;
+                }
+            }
+        }
+    });
 
+    // Таймер обратного отсчета
+    let deadLine = '2018-10-27';
 
-$(document).ready(function () {
+    function getTimeRemaining(endTime) {
+        let t = Date.parse(endTime) - Date.parse(new Date()),
+            seconds = Math.floor((t / 1000) % 60),
+            minutes = Math.floor((t / 1000 / 60) % 60),
+            hours = Math.floor(t / 1000 / 60 / 60);
 
-  $('.header-menu__burger').on("click", function () {
-    $('.header-menu__burger').css('left', '-600px');
-    $('.header-menu').css('left', '0');
-  });
+        if (Date.parse(endTime) < Date.parse(new Date())) {
+            seconds = '00';
+            minutes = '00';
+            hours = '00';
+        }
 
-  $('.header-menu__close').on("click", function () {
-    $('.header-menu').css('left', '-600px');
-    $('.header-menu__burger').css('left', '15px');
-  });
+        if (Math.abs(seconds) < 10) {
+            seconds = '0' + Math.abs(seconds);
+        } else {
+            seconds = '' + Math.abs(seconds);
+        }
+        if (Math.abs(minutes) < 10) {
+            minutes = '0' + Math.abs(minutes);
+        } else {
+            minutes = '' + Math.abs(minutes);
+        }
+        if (Math.abs(hours) < 10) {
+            hours = '0' + Math.abs(hours);
+        } else {
+            hours = '' + Math.abs(hours);
+        }
 
-  $('.header-menu__rel a').on("click", function () {
-    $('.header-menu').css('left', '-600px');
-    $('.header-menu__burger').css('left', '15px');
-  });
-});
+        return ({
+            'total': t,
+            'hours': hours,
+            'minutes': minutes,
+            'seconds': seconds
+        });
+    }
 
-$(document).ready(function () {
+    function setClock(id, endTime) {
+        let timer = document.getElementById(id),
+            hours = timer.querySelector('.hours'),
+            minutes = timer.querySelector('.minutes'),
+            seconds = timer.querySelector('.seconds'),
+            timeInterval = setInterval(updateClock, 1000);
 
-  $('.header-block__button').on("click", function () {
-    $('.overlay').show();
-  });
+        function updateClock() {
+            let t = getTimeRemaining(endTime);
 
-  $('.footer-block__button').on("click", function () {
-    $('.overlay').show();
-  });
-
-  $('.popup-close').on("click", function () {
-    $('.overlay').hide();
-  });
-
-});
-
-jQuery(function ($) {
-  $("#phone1").mask("+7 (999) 999-99-99");
-});
-
-jQuery(function ($) {
-  $("#phone2").mask("+7 (999) 999-99-99");
-});
-
-$(function () {
-
-  $(window).scroll(function () {
-
-    if ($(this).scrollTop() != 0) {
-
-      $('#toTop').fadeIn();
-
-    } else {
-
-      $('#toTop').fadeOut();
+            hours.textContent = t.hours;
+            minutes.textContent = t.minutes;
+            seconds.textContent = t.seconds;
+        }
 
     }
 
-  });
-
-  $('#toTop').click(function () {
-
-    $('body,html').animate({
-      scrollTop: 0
-    }, 800);
-
-  });
-
+    setClock('timer', deadLine);
 });
