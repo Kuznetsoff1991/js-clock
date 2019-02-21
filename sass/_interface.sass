@@ -1,0 +1,113 @@
+.section
+	&-title
+		font-family: 'Roboto Regular'
+		font-size: 27px
+		font-weight: 700
+		text-transform: uppercase
+		text-align: center
+		margin-bottom: 29px
+		letter-spacing: -0.8px
+		&::after
+			content: ''
+			margin-top: 12px
+			display: block
+			height: 6px
+			background: url(../img/products/icon-title.png) center no-repeat
+.button
+ font-family: 'Roboto Regular'
+ font-size: 14px
+ background-color: $active-color
+ color: $text-color-light
+ border: 1px solid transparent
+ padding: 11px 25px
+ border-radius: 5px
+ &:hover
+ 	background-color: lighten($active-color, 5)
+ 	cursor: pointer
+ &-o
+ 	font-family: 'Roboto Regular'
+ 	background-color: transparent
+ 	color: $text-color-dark
+	&:hover
+ 	 background-color: lighten($active-color, 5)
+ 	 color: $text-color-light
+ 	 border: 1px solid transparent
+ 	 cursor: pointer
+ img
+ 	margin-right: 8px
+ 	width: 20px
+ 	height: 20px
+ 	vertical-align: middle
+ &_big
+ 	padding-top: 19px
+ 	padding-bottom: 19px
+ 	vertical-align: middle
+
+.slider-arrow
+	position: absolute
+	top: 0
+	height: 100%
+	width: 22px
+	border: 1px solid $active-color
+	z-index: 10
+	&:hover
+		cursor: pointer
+	&_right
+		right: 0
+		background: #fff url(../img/arrow-right.png) center no-repeat
+		&:hover
+			background: $active-color url(../img/arrow-right-active.png) center no-repeat
+	&_left
+		left: 0
+		background: #fff url(../img/arrow-left.png) center no-repeat
+		&:hover
+			background: $active-color url(../img/arrow-left-active.png) center no-repeat
+.slider-feed
+	position: absolute
+	top: 0
+	height: 100%
+	width: 22px
+	z-index: 99
+	border: none
+	z-index: 10
+	&:hover
+		cursor: pointer
+	&_right
+		right: 0
+		background: url(../img/arrow-right-feed.png) center no-repeat
+	&_left
+		left: 0
+		background: url(../img/arrow-left-feed.png) center no-repeat
+.slider-main
+	position: absolute
+	top: 42%
+	height: 100px
+	width: 22px
+	border: none
+	transition: all linear 0.5s
+	transform: scale(1.2, 1.2)
+	z-index: 5
+	&:hover
+		cursor: pointer
+		transition: all linear 0.5s
+		transform: scale(1.5, 1.5)
+	&_right
+		right: 3%
+		background: url(../img/arrow-right-feed.png) center no-repeat
+	&_left
+		left: 3%
+		background: url(../img/arrow-left-feed.png) center no-repeat
+
+.dark-bg
+	position: relative
+	z-index: 2
+	&::before
+		content: ''
+		display: block
+		position: absolute
+		left: 0
+		top: 0
+		width: 100%
+		height: 100%
+		background-color: rgba(0, 0, 0, 0.5)
+		z-index: -1 

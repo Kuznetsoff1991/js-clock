@@ -3,658 +3,822 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-		<title>Фитнесс-центр "Нептун"</title>
-		<link rel="icon" href="img/favicon.png">
-		<link rel="stylesheet" href="css/reset.css">
-		<link rel="stylesheet" href="css/style.css">
-		<link rel="stylesheet" href="css/fonts.css">
+		<title>Добрый картон</title>
+		<link rel="icon" href="img/favicon.ico">
+    <link rel="stylesheet" href="css/reset.css">
+    <link href="css/fonts.css" rel="stylesheet">
+    <link href="css/bootstrap-grid.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/animate.css" rel="stylesheet">
     <link href="slick/slick.css" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
-    <link href="css/ui.totop.css" rel="stylesheet">
+    <link rel="stylesheet" href="slick/slick-theme.css">
+    <link rel="stylesheet" href="css/ui.totop.css">
 	</head>
 	<body>
-		<header class="header">
-			<div class="header-container">
-				<div class="header-menu">
-					<div class="header-menu__blocks">
-						<div class="header-menu__mobmenu">&#9776; Меню</div>
-							<!-- /.header-menu__mobmenu -->
-						<div class="header-menu__mobile">
-							<div class="header-menu__segment">
-								<a href="" class="header-menu__rel">О клубе</a>
-							</div>
-							<!-- /.header-menu__segment -->
-							<div class="header-menu__segment">
-								<a href="" class="header-menu__rel">Клубные карты</a>
-							</div>
-							<!-- /.header-menu__segment -->
-							<div class="header-menu__segment">
-								<a href="" class="header-menu__rel">Расписание</a>
-							</div>
-							<!-- /.header-menu__segment -->
-							<div class="header-menu__segment">
-								<a href="" class="header-menu__rel">Новости</a>
-							</div>
-							<!-- /.header-menu__segment -->
-							<div class="header-menu__segment">
-								<a href="" class="header-menu__rel">Акции</a>
-							</div>
-							<!-- /.header-menu__segment -->
-							<div class="header-menu__segment">
-								<a href="" class="header-menu__rel">Контакты</a>
-							</div>
-							<!-- /.header-menu__segment -->
-						</div>
-						<!-- /.header-menu__mobile -->
-						<div class="header-menu__segment">
-							<a href="" class="header-menu__relvk">Вконтакте</a>
-						</div>
-						<!-- /.header-menu__segment -->
-					</div>
-					<!-- /.header-menu__blocks -->
+		<div class="menu hidden-menu">
+			<div class="menu-selectors">
+				<div class="menu-selector menu-selector__about" >
+				<a href="#about">О компании</a>
 				</div>
-				<!-- /.header-menu -->
-				<div class="header-company">
-					<div class="header-company__blocks">
-						<div class="header-company__logo">
-							<a href="index.html">
-								<img src="img/header/logo.png" alt="Фитнесс-центр Нептун" class="header-company__pic">
-							</a>
-						</div>
-						<!-- /.header-company__logo -->
-						<a href="" class="header-company__mapclub">
-							<div class="header-company__inmap">Схема клуба</div>
-						</a>
-						<!-- /.header-company__mapclub -->
-						<div class="header-company__phones">+7 (812) 324-46-96<br> +7 (921) 320-26-12</div>
-						<!-- /.header-company__phones -->
-						<div class="header-company__address">
-							Санкт-Петербург, МДЦ Нептун наб. Обводного канала, 93-а 
-						</div>
-						<!-- /.header-company__address -->
-						<button class="header-company__button">Заказать</button>
-						<!-- /.header-company__button -->
-						</div>
-					<!-- /.header-company__blocks -->
+				<div class="line"><img src="img/menu/line.png" alt="Line"></div>
+				<div class="menu-selector menu-selector__features">
+				<a href="#features">Преимущества</a>
 				</div>
-				<!-- /.header-company -->
+				<div class="line"><img src="img/menu/line.png" alt="Line"></div>
+				<div class="menu-selector menu-selector__production">
+				<a href="#production">Производство</a>
+				</div>
+				<div class="line"><img src="img/menu/line.png" alt="Line"></div>
+				<div class="menu-selector menu-selector__stock">
+				<a href="#stock">Склад</a>
+				</div>
+				<div class="line"><img src="img/menu/line.png" alt="Line"></div>
+				<div class="menu-selector menu-selector__products">
+				<a href="#products">Продукция</a>
+				</div>
+				<div class="line"><img src="img/menu/line.png" alt="Line"></div>
+				<div class="menu-selector menu-selector__clients">
+				<a href="#clients">Наши клиенты</a>
+				</div>
+				<div class="line"><img src="img/menu/line.png" alt="Line"></div>
+				<div class="menu-selector menu-selector__certificates">
+				<a href="#certificates">Сертификаты</a>
+				</div>
+				<div class="line"><img src="img/menu/line.png" alt="Line"></div>
+				<div class="menu-selector menu-selector__reviews">
+				<a href="#reviews">Отзывы</a>
+				</div>
+				<div class="line"><img src="img/menu/line.png" alt="Line"></div>
+				<div class="menu-selector menu-selector__contacts">
+				<a href="#contacts">Контакты</a>
+				</div>
+				</div>
+			<!-- /.menu-selectors  -->
+		</div>
+		<!-- /.menu -->
 
-				<div class="header-features">
-					<div class="header-features__menu">&#9776; Услуги</div>
-					<!-- /.header-features__menu -->
-					<div class="header-features__blocks">
-						<a href="">
-							<div class="header-features__block">Тренажерный зал</div>
-							</a>
-						<!-- /.header-features__block -->
-						<div class="header-features__blockpoint">
-							<a href="">
-							<div class="header-features__pointmenu">Пункт меню 1</div>
-							</a>
-						<!-- /.header-features__block -->
-						<a href="">
-							<div class="header-features__pointmenu">Пункт меню 2</div>
-							</a>
-						<!-- /.header-features__block -->
-						<a href="">
-							<div class="header-features__pointmenu">Пункт меню 3</div>
-							</a>
-						<!-- /.header-features__block -->
+
+		<header class="header">
+			<div class="container header-container">
+				<div class="row align-items-center">
+					<div class="col-3 col-sm-3 col-md-4
+					 col-lg-4 col-xl-4">
+						<div onClick="document.location='index.html'" class="header__logo">
+							<!-- <img src="img/header/logo-dk.png" alt="Логотип Доброго картона"> -->
 						</div>
-						<a href="">
-							<div class="header-features__block">Аэробный зал</div>
-							</a>
-						<!-- /.header-features__block -->
-						<a href="">
-							<div class="header-features__block">Бассейн</div>
-							</a>
-						<!-- /.header-features__block -->
-						<a href="">
-							<div class="header-features__block">Теннис</div>
-							</a>
-						<!-- /.header-features__block -->
-						<a href="">
-							<div class="header-features__block header-features__blockx">Сквош</div>
-							</a>
-						<!-- /.header-features__block -->
-						<a href="">
-							<div class="header-features__block">Spa</div>
-							</a>
-						<!-- /.header-features__block -->
+						<!-- /.header__logo -->
 					</div>
-					<!-- /.header-features__blocks -->
+					<!-- /.col-4 -->
+					<div class="col-9 col-sm-9 col-md-8 col-lg-8 col-xl-8">
+						<div class="header-contacts">
+							<div class="header-contacts__phones">
+								<div class="header-contacts__phone phone-1">
+								8 (347) <span class="header-span">271-54-28</span>
+								</div>
+								<!-- /.header-contacts__phone -->
+								<div class="header-contacts__phone phone-2">
+									8 (937) <span class="header-span">363-30-00</span>
+								</div>
+								<!-- /.header-contacts__phone --></div>
+							<!-- /.header-contacts__phones -->
+							<button onclick="yaCounter47946908.reachGoal('topBtn'); return true;" class="header-contacts__button button">
+								<img class="header-imgphone" src="img/header/logo-phone.png" alt="Телефончик">
+								<span class="hidden-mobile">Заказать звонок</span>
+							</button>
+							<!-- /.header-contacts__button -->
+						</div>
+						<!-- /.header-contacts -->
+					</div>
+					<!-- /.col-8 -->
 				</div>
-				<!-- /.header-features -->
+				<!-- /.row -->
 			</div>
-			<!-- /.header-container -->
+			<!-- /.container -->
 		</header>
 		<!-- /.header -->
 
-
-		<div class="window">
-		<div class="window-offer">
-			<div class="window-offer__title">Заказать</div>
-			<!-- /.popup-call__title -->
-			<div class="window-offer__close"> &times;</div>
-				<!-- /.popup-close -->
-			<div class="window-offer__form">
-				<form action="mailer/smart.php" method="POST" id="popupform2" class="window-form">
-					<div class="form-text"><span>*</span>Ваше имя:</div>
-					<input class="window-offer__input1" name="user_name" type="text" id="name" required maxlength="50" autocomplete="off" />
-					<div class="form-text"><span>*</span>Телефон/E-Mail:</div>
-					<input class="window-offer__input2" name="user_phone" type="text" id="data" required maxlength="100" autocomplete="off" />
-
-					<div class="form-text"><span>*</span>Подтвердите, что вы человек</div>
-					<div class="g-recaptcha" data-sitekey="6Lcns1cUAAAAAJkprzxGh0cbT-LjIEyTArLzC_jo"></div>
-
-					<button class="window-offer__button" type="submit">Отправить заказ</button>
-				</form>
-				<!-- /.popup-window__form -->
-			</div>
-			<!-- /.popup-window__form -->
-		</div>
-		<!-- /.window-offer -->
-	</div>
-	<!-- /.window -->
-
 		<section class="main">
 			<div class="main-slider">
-				<img src="img/main/photo-1.jpg" alt="Тренажерный зал" class="main-slider__pic">
-				<img src="img/main/photo-2.jpg" alt="Бассейн" class="main-slider__pic">
-				<img src="img/main/photo-3.jpg" alt="Аэробный зал" class="main-slider__pic">
-				<img src="img/main/photo-4.jpg" alt="Кислородная борокамера" class="main-slider__pic">
-				<img src="img/main/photo-5.jpg" alt="SPA" class="main-slider__pic">
+				<div class="slider-in dark-bg">
+					<div class="container main-original">
+						<div class="row align-items-center">
+							<div class="col-12 col-sm-12 col-md-12 col-lg-5 col-xl-5">
+								<div class="main-img hidden-mobile">
+									<img src="img/main/main-img.png" alt="Коробки">
+								</div>
+								<!-- /.main-img -->
+							</div>
+							<!-- /.col-5 -->
+							<div class="col-12 col-sm-12 col-md-12 col-lg-7 col-xl-7">
+								<div class="main-text">
+									<h2 class="main-text__title">
+										Производство упаковки из гофрокартона
+									</h2>
+									<!-- /.main-text__title -->
+									<div class="main-text__subtitle">
+										с доставкой по всей России
+									</div>
+									<!-- /.main-text__subtitle -->
+									<div class="main-text__form">
+										<div class="form-title">
+											Получите индивидуальное предложение
+											<br>на производство и поставку гофропродукции
+											<span class="form-title__important"> Образцы упаковки бесплатно!
+											</span>
+										</div>
+										<!-- /.form-title -->
+										<form action="mailer/smart.php" method="POST" class="form" id="twoajaxform">
+											<input class="form__input" name="user_phone" id="phone" placeholder="Введите номер телефона" required maxlength="30" autocomplete="off" />
+											<button onclick="yaCounter47946908.reachGoal('formBtn'); return true;" class="button button_big" type="submit">Оставить заявку!</button>
+										</form>
+										<!-- /.form -->
+										<small class="form-small">*Минимальный заказ 500шт</small>
+									</div>
+									<!-- /.main-text__form -->
+								</div>
+								<!-- /.main-text -->
+							</div>
+							<!-- /.col-7 -->
+						</div>
+						<!-- /.row -->
+					</div>
+					<!-- /.container -->
+				</div>
+				<!-- /.slider-in -->
+
+				<div class="slider-in-2 dark-bg">
+					<div class="container main-two">
+						<div class="row align-items-center">
+							<div class="col-12 col-sm-12 col-md-12 col-lg-5 col-xl-5">
+								<div class="main-img-2 hidden-mobile">
+									<img src="img/main/main-img-2.png" alt="Коробки">
+								</div>
+								<!-- /.main-img -->
+							</div>
+							<!-- /.col-5 -->
+							<div class="col-12 col-sm-12 col-md-12 col-lg-7 col-xl-7">
+								<div class="main-text-2">
+									<h2 class="main-text__title">
+										Сборка гофрокоробок из гофрокартона
+									</h2>
+									<!-- /.main-text__title -->
+									<div class="main-text__subtitle">
+										Быстро, недорого, качественно
+									</div>
+									<!-- /.main-text__subtitle -->
+									<div class="main-text__form">
+										<div class="form-title">
+											Получите индивидуальное предложение
+											<br>на производство и поставку гофропродукции
+											<span class="form-title__important"> Образцы упаковки бесплатно!
+											</span>
+										</div>
+										<!-- /.form-title -->
+										<form action="mailer/smart.php" method="POST" class="form" id="ajaxform">
+											<input class="form__input" name="user_phone" id="phone2" placeholder="Введите номер телефона" required maxlength="30" autocomplete="off" />
+											<button onclick="yaCounter47946908.reachGoal('formBtn'); return true;" class="button button_big" type="submit">Оставить заявку!</button>
+										</form>
+										<!-- /.form -->
+										<small class="form-small">*Минимальный заказ 500шт</small>
+									</div>
+									<!-- /.main-text__form -->
+								</div>
+								<!-- /.main-text -->
+							</div>
+							<!-- /.col-7 -->
+						</div>
+						<!-- /.row -->
+					</div>
+					<!-- /.container -->
+				</div>
+				<!-- /.slider-in -->
 			</div>
 			<!-- /.main-slider -->
 		</section>
 		<!-- /.main -->
 
-		<section class="features">
-			<div class="features-title">Фитнес-Центр “Нептун” - 17 лет успешной работы!</div>
-			<!-- /.features-title -->
-			<div class="features-blocks">
-				<div class="features-block">
-					<div class="features-block__img">
-						<img src="img/features/icon-1.png" alt="Парковка">
-					</div>
-					<!-- /.features-block__img -->
-					<div class="features-block__text">
-						Современный клуб в центре города с <span>удобным расположением</span> и собственной бесплатной парковкой
-					</div>
-					<!-- /.features-block__text -->
+		<div class="overlay">
+			<div class="popup">
+				<div class="popup-title">Форма обратной связи</div>
+				<!-- /.popup-title -->
+				<div class="popup-close"> &times;</div>
+				<!-- /.popup-close -->
+				<div class="popup-form">
+					<form class="main-form" action="mailer/smart.php" method="POST" id="popupform">
+						<div class="popup-form-header">
+							Получите индивидуальное предложение <span>на производство и поставку изделий</span>
+							<label for="phone3" class="popup-form__label">
+								Введите ваш номер телефона:
+							</label>
+							<input class="popup-form__input" name="user_phone" id="phone3" placeholder="+7 (ХХХ) ХХХ-ХХ-ХХ" required maxlength="30" autocomplete="off" />
+							<button onclick="yaCounter47946908.reachGoal('formBtn'); return true;" class="button popup-form__btn"  type="submit">
+								Оставить заявку!
+							</button>
+							<div class="popup-form__note">
+								*Минимальный заказ 500шт
+							</div>
+							<!-- /.popup-form__note -->
+						</div>
+						<!-- /.popup-form-header -->
+					</form>
 				</div>
-				<!-- /.features-block -->
-				<div class="features-block">
-					<div class="features-block__img">
-						<img src="img/features/icon-2.png" alt="Снаряжение">
-					</div>
-					<div class="features-block__text">
-						У нас есть все необходимое для проведения комфортных полноценных тренировок, восстановления и отдыха
-					</div>
-					<!-- /.features-block__text -->
-				</div>
-				<!-- /.features-block -->
-				<div class="features-block">
-					<div class="features-block__img">
-						<img src="img/features/icon-3.png" alt="Известные клиенты">
-					</div>
-					<div class="features-block__text">
-						Занимаясь в нашем клубе можно встретить известных политиков, деятелей театра и кино, индустрии шоу-бизнеса
-					</div>
-					<!-- /.features-block__text -->
-				</div>
-				<!-- /.features-block -->
-				<div class="features-block">
-					<div class="features-block__img">
-						<img src="img/features/icon-4.png" alt="ПРофессиональная команда">
-					</div>
-					<div class="features-block__text">
-						<span>Профессиональная команда</span> нашего клуба подготавливает большое количество мастеров спорта в различных дисциплинах
-					</div>
-					<!-- /.features-block__text -->
-				</div>
-				<!-- /.features-block -->
-				<div class="features-block">
-					<div class="features-block__img">
-						<img src="img/features/icon-5.png" alt="Система акций и скидок">
-					</div>
-					<div class="features-block__text">
-						Для вас действует открытая ценовая политика и <span>система скидок и бонусов</span>
-					</div>
-					<!-- /.features-block__text -->
-				</div>
-				<!-- /.features-block -->
+				<!-- /.popup-form -->
 			</div>
-			<!-- /.features-blocks -->
+			<!-- /.popup -->
+		</div>
+		<!-- /.overlay -->
+
+		<div class="phankyou" id="over">
+			<div class="phankyou-popup">
+				<div class="phankyou-popup__title">Форма обратной связи</div>
+				<!-- /.popup-title -->
+				<div class="phankyou-popup__close"> &times;</div>
+				<!-- /.popup-close -->
+				<div class="phankyou-popup__form">
+					<h2>Ваша заявка принята.</h2>
+				</div>
+				<!-- /.popup-form -->
+			</div>
+			<!-- /.popup -->
+		</div>
+		<!-- /.overlay -->
+
+		<div class="section features" id="about">
+			<div class="container">
+				<div class="numbers">
+					<div class="numbers-block">
+						<div class="numbers-block__title">
+							5 лет
+						</div>
+						<!-- /.numbers-block__title -->
+						<div class="numbers-block__text">
+							На рынке изделий из гофрокартона
+						</div>
+						<!-- /.numbers-block__text -->
+					</div>
+					<!-- /.numbers-block -->
+
+					<div class="numbers-block">
+						<div class="numbers-block__title">
+							до 5 000 000 м<sup>2</sup>
+						</div>
+						<!-- /.numbers-block__title -->
+						<div class="numbers-block__text">
+							Ежемесячный объем производства гофрокартона
+						</div>
+						<!-- /.numbers-block__text -->
+					</div>
+					<!-- /.numbers-block -->
+
+					<div class="numbers-block">
+						<div class="numbers-block__title">
+							4 000 м<sup>2</sup>
+						</div>
+						<!-- /.numbers-block__title -->
+						<div class="numbers-block__text">
+							Площадь склада
+						</div>
+						<!-- /.numbers-block__text -->
+					</div>
+					<!-- /.numbers-block -->
+				</div>
+				<!-- /.numbers -->
+
+
+
+				<div class="features-blocks" id="features">
+
+					<div class="features-block wow fadeInUp" data-wow-delay="0.2s">
+						<div class="features-block__img">
+							<img class="features-block__icon" src="img/features/icon-1.png" alt="icon-1">
+						</div>
+						<!-- /.features-block__img -->
+						<div class="features-block__text">
+							<div class="features-block__title">Производство
+							</div>
+							<!-- /.features-block__title -->
+							<div class="features-block__descr">4 технологические линии способны выполнить любой заказ любой сложности</div>
+							<!-- /.features-block__descr -->
+						</div>
+						<!-- /.features-block__text -->
+					</div>
+					<!-- /.features-block -->
+
+					<div class="features-block wow fadeInUp" data-wow-delay="0.4s">
+						<div class="features-block__img">
+							<img class="features-block__icon" src="img/features/icon-2.png" alt="icon-2">
+						</div>
+						<!-- /.features-block__img -->
+						<div class="features-block__text">
+							<div class="features-block__title">Бесплатные образцы
+							</div>
+							<!-- /.features-block__title -->
+							<div class="features-block__descr">Бесплатно делаем образцы гофроупаковки - это помогает заранее увидеть упаковку
+							</div>
+							<!-- /.features-block__descr -->
+						</div>
+						<!-- /.features-block__text -->
+					</div>
+					<!-- /.features-block -->
+
+					<div class="features-block wow fadeInUp" data-wow-delay="0.6s">
+						<div class="features-block__img">
+							<img class="features-block__icon" src="img/features/icon-3.png" alt="icon-3">
+						</div>
+						<!-- /.features-block__img -->
+						<div class="features-block__text">
+							<div class="features-block__title">Стабильное качество
+							</div>
+							<!-- /.features-block__title -->
+							<div class="features-block__descr">Собственная лаборатория контролирует качество на каждом этапе производства
+							</div>
+							<!-- /.features-block__descr -->
+						</div>
+						<!-- /.features-block__text -->
+					</div>
+					<!-- /.features-block -->
+
+					<div class="features-block wow fadeInUp" data-wow-delay="0.8s">
+						<div class="features-block__img">
+							<img class="features-block__icon" src="img/features/icon-4.png" alt="icon-4">
+						</div>
+						<!-- /.features-block__img -->
+						<div class="features-block__text">
+							<div class="features-block__title">Страховой запас
+							</div>
+							<!-- /.features-block__title -->
+							<div class="features-block__descr">Можем хранить запас гофро-продукции на своих складах и поставлять его партиями
+							</div>
+							<!-- /.features-block__descr -->
+						</div>
+						<!-- /.features-block__text -->
+					</div>
+					<!-- /.features-block -->
+
+					<div class="features-block wow fadeInUp" data-wow-delay="1s">
+						<div class="features-block__img">
+							<img class="features-block__icon" src="img/features/icon-5.png" alt="icon-5">
+						</div>
+						<!-- /.features-block__img -->
+						<div class="features-block__text">
+							<div class="features-block__title">Флексопечать
+							</div>
+							<!-- /.features-block__title -->
+							<div class="features-block__descr">Возможно нанесение вашего  логотипа, текста или манипуляционных знаков
+							</div>
+							<!-- /.features-block__descr -->
+						</div>
+						<!-- /.features-block__text -->
+					</div>
+					<!-- /.features-block -->
+
+					<div class="features-block wow fadeInUp" data-wow-delay="1.2s">
+						<div class="features-block__img">
+							<img class="features-block__icon" src="img/features/icon-6.png" alt="icon-6">
+						</div>
+						<!-- /.features-block__img -->
+						<div class="features-block__text">
+							<div class="features-block__title">Гидрофобные добавки
+							</div>
+							<!-- /.features-block__title -->
+							<div class="features-block__descr">На производстве реализована технология, которая позволяет гофрокартону стать прочнее
+							</div>
+							<!-- /.features-block__descr -->
+						</div>
+						<!-- /.features-block__text -->
+					</div>
+					<!-- /.features-block -->
+
+				</div>
+				<!-- /.features-blocks -->
+
+
+			</div>
+			<!-- /.container -->
+		</div>
+		<!-- /.section features -->
+		<section class="products" id="products">
+			<div class="container">
+				<h2 class="section-title products-title">наша Продукция</h2>
+				<!-- /.section-title -->
+
+
+				<div class="row align-items-end">
+					<div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+						<div class="products-block">
+							<div class="products-block__img">
+								<img class="products-block__icon" src="img/products/img-1.png" alt="#">
+							</div>
+							<div class="products-block__title">Гофрокороб 4-х клапанный</div>
+							<!-- /.products-block__title -->
+							<div class="products-block__buttons">
+								<button class="button button-o products-block__button">Подробнее</button>
+								<button class="button products-block__button-2">Получить расчет</button>
+							</div>
+							<!-- /.products-block__buttons -->
+						</div>
+						<!-- /.products-block -->
+					</div>
+
+					<!-- /.col-6 -->
+					<div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+						<div class="products-block">
+							<div class="products-block__img">
+								<img class="products-block__icon" src="img/products/img-2.png" alt="#">
+							</div>
+							<div class="products-block__title">Гофролоток 
+							</div>
+							<!-- /.products-block__title -->
+							<div class="products-block__buttons">
+								<button class="button button-o products-block__button">Подробнее</button>
+								<button class="button button products-block__button-2">Получить расчет</button>
+							</div>
+							<!-- /.products-block__buttons -->
+						</div>
+						<!-- /.products-block -->
+					</div>
+					<!-- /.col-6 -->
+				</div>
+				<!-- /.row -->
+
+
+				<div class="row align-items-start">
+					<div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+						<div class="products-block">
+							<div class="products-block__img products-block__img3">
+								<img class="products-block__icon" src="img/products/img-3.png" alt="#">
+							</div>
+							<div class="products-block__title products-block__title3">Гофрокороб самосборный (сложная высечка)
+							</div>
+							<!-- /.products-block__title -->
+							<div class="products-block__buttons">
+								<button class="button button-o products-block__button">Подробнее</button>
+								<button class="button button products-block__button-2">Получить расчет</button>
+							</div>
+							<!-- /.products-block__buttons -->
+						</div>
+						<!-- /.products-block -->
+					</div>
+
+					<!-- /.col-6 -->
+					<div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+						<div class="products-block">
+							<div class="products-block__img products-block__img4">
+								<img class="products-block__icon" src="img/products/img-4.png" alt="#">
+							</div>
+							<div class="products-block__title products-block__title4">Листовой гофрокартон
+							</div>
+							<!-- /.products-block__title -->
+							<div class="products-block__buttons">
+								<button class="button button-o products-block__button">Подробнее</button>
+								<button class="button button products-block__button-2">Получить расчет</button>
+							</div>
+							<!-- /.products-block__buttons -->
+						</div>
+						<!-- /.products-block -->
+					</div>
+					<!-- /.col-6 -->
+				</div>
+				<!-- /.row -->
+			</div>
+			<!-- /.container -->
 		</section>
-		<!-- /.features -->
+		<!-- /.products -->
 
-		<section class="halls">
-			<div class="halls-title">
-				Залы
-			</div>
-			<!-- /.halls-title -->
-			<div class="halls-blocks">
-				<div class="halls-block">
-					<div class="halls-block__photo">
-						<img src="img/halls/hall-1.jpg" alt="Тренажерный зал" class="halls-block__pic">
-						<div class="halls-block__description">Тренажерный зал
-						<a class="halls-block__rel" href="">&gt;</a>
-						</div>
-						<!-- /.halls-block__description -->
-					</div>
-					<!-- /.halls-block__photo -->
-					<div class="halls-block__stats">
-						<div class="halls-block__statsone"><span>101</span> новый<br> европейский тренажер</div>
-						<!-- /.halls-block__statsone -->
-						<div class="halls-block__statstwo"><span>100</span><br> кв. м</div>
-						<!-- /.halls-block__statstwo -->
-					</div>
-					<!-- /.halls-block__stats -->
-				</div>
-				<!-- /.halls-block -->
 
-				<div class="halls-block">
-					<div class="halls-block__photo">
-						<img src="img/halls/hall-2.jpg" alt="Аэробный зал" class="halls-block__pic">
-						<div class="halls-block__description">Аэробный зал
-						<a class="halls-block__rel" href="">&gt;</a>
-						</div>
-						<!-- /.halls-block__description -->
-					</div>
-					<!-- /.halls-block__photo -->
-					<div class="halls-block__title">Групповые занятия:</div>
-					<!-- /.halls-block__title -->
-					<div class="halls-block__calendar">
-						<div class="halls-block__type">
-							<div class="halls-block__subtitle">Танцы<br> Аэробика</div>
-							<!-- /.halls-block__subtitle -->
-							<div class="halls-block__subtitle">Йога<br> Боди скульпт</div>
-							<!-- /.halls-block__subtitle -->
-						</div>
-						<!-- /.halls-block__type -->
-						<button class="halls-block__button">Расписание</button>
-					</div>
-					<!-- /.halls-block__callendar -->
+		<section class="offer dark-bg" id="stock">
+			<div class="container">
+				<h2 class="offer-title">
+					Получите индивидуальное предложение <span class="offer-title_small">на производство и поставку изделий</span>
+				</h2>
+				<!-- /.main-text__title -->
+				<div class="offer-form">
+				<form action="mailer/smart.php" method="POST" id="offerform">
+						<label class="offer-form__label">Введите ваш номер телефона</label>
+						<input class="form__input offer-form__input" name="user_phone" id="phone4" placeholder="+7 (ХХХ) ХХХ-ХХ-ХХ" required maxlength="30" autocomplete="off" />
+						<button onclick="yaCounter47946908.reachGoal('formBtn'); return true;" class="button offer-form__button" type="submit">Оставить заявку!</button>
+				</form>
+				<!-- /.form -->
+				<small class="form-small main-small">*Минимальный заказ 500шт</small>
 				</div>
-				<!-- /.halls-block -->
 			</div>
-			<!-- /.halls-blocks -->
 		</section>
-		<!-- /.halls -->
 
-		<section class="spa">
-			<div class="spa-title">SPA и другие услуги</div>
-			<!-- /.spa-title -->
-			<div class="spa-menu">
 
-				<div class="spa-menu__blockrel">
-					<div class="spa-menu__rel spa-menu__rel1">
-						<div class="spa-menu__block">Турецкая сауна
-							<div class="spa-menu__arrow">&gt;</div>
+		<div class="production" id="production">
+			<div class="container">
+				<div class="row">
+					<div class="col-12 col-sm-12 col-md-7 col-lg-7 col-xl-7">
+						<div class="hidden-mobile">
+							<div class="production-slider_top">
+								<img src="img/production/img-1.jpg" alt="Завод">
+								<img src="img/production/img-2.jpg" alt="Завод">
+								<img src="img/production/img-3.jpg" alt="Завод">
+								<img src="img/production/img-4.jpg" alt="Завод">
+								<img src="img/production/img-1.jpg" alt="Завод">
+								<img src="img/production/img-2.jpg" alt="Завод">
+								<img src="img/production/img-3.jpg" alt="Завод">
+								<img src="img/production/img-4.jpg" alt="Завод">
+							</div>
 						</div>
+						<div class="production-slider_bottom">
+							<img src="img/production/img-1.jpg" alt="Завод">
+							<img src="img/production/img-2.jpg" alt="Завод">
+							<img src="img/production/img-3.jpg" alt="Завод">
+							<img src="img/production/img-4.jpg" alt="Завод">
+							<img src="img/production/img-1.jpg" alt="Завод">
+							<img src="img/production/img-2.jpg" alt="Завод">
+							<img src="img/production/img-3.jpg" alt="Завод">
+							<img src="img/production/img-4.jpg" alt="Завод">
+						</div>
+						<!-- /.production-slider -->
 					</div>
-					<!-- /.spa-menu__rel1 -->
+					<!-- /.col-7 -->
+					<div class="col-12 col-sm-12 order-first order-md-last col-md-5 col-lg-5 col-xl-5">
+						<div class="production-text">
+							<div class="production-text__title">
+								Производство
+							</div>
+							<!-- /.production-text__title -->
+							<div class="production-text__descr">
+								<p class="production-text__descr-p">Современное оборудование позволяет производить до 5 миллионов квадратных метров гофрокартона ежемесячно. Гофрокороба и лотки производятся по ГОСТу или чертежам заказчика.</p>
+								<p class="production-text__descr-p">Досконально прорабатываем конструкции коробов и составы сырья, учитывая условия хранения, транспортировки и производства вашей продукции.</p>
+								<p class="production-text__descr-p">Возможно нанесение цветной флексопечати на поверхность коробов.</p>
+							</div>
+							<!-- /.production-text__descr -->
+						</div>
+						<!-- /.production-text -->
+					</div>
+					<!-- /.col-5 -->
 				</div>
-				<!-- /.spa-menu__blockrel -->
+				<!-- /.row -->
+			</div>
+			<!-- /.container -->
+		</div>
+		<!-- /.production -->
 
-				<div class="gallery-1">
-					<div class="spa-gallery">
-						<div class="spa-gallery__big">
-							<img src="img/spa/image-1.jpg" alt="Спа">
+		<section class="clients" id="clients">
+			<div class="container">
+				<h2 class="section-title clients-title">наши Клиенты</h2>
+				<!-- /.section-title -->
+
+
+				<div class="row align-items-center">
+					<div class="col-6 col-sm-6 col-md-3 col-lg-3 col-xl-3">
+						<div class="clients-block">
+							<img class="clients-block__img" src="img/clients/client-1.png" alt="Client">
 						</div>
-						<!-- /.spa-gallery__one -->
-						<div class="spa-gallery__small">
-							<div class="spa-gallery__two">
-								<img src="img/spa/image-2.jpg" alt="Бассейн">
-							</div>
-							<!-- /.spa-gallery__two -->
-							<div class="spa-gallery__three">
-								<img src="img/spa/image-3.jpg" alt="Джакузи">
-							</div>
-							<!-- /.spa-gallery__three -->
-						</div>
-						<!-- /.spa-gallery__small -->
+						<!-- /.clients-block -->
 					</div>
-					<!-- /.spa-gallery -->
+					<!-- /.col-3 -->
+					<div class="col-6 col-sm-6 col-md-3 col-lg-3 col-xl-3">
+						<div class="clients-block">
+							<img class="clients-block__img" src="img/clients/client-2.png" alt="Client">
+						</div>
+						<!-- /.clients-block -->
+					</div>
+					<!-- /.col-3 -->
+					<div class="col-6 col-sm-6 col-md-3 col-lg-3 col-xl-3">
+						<div class="clients-block">
+							<img class="clients-block__img" src="img/clients/client-3.png" alt="Client">
+						</div>
+						<!-- /.clients-block -->
+					</div>
+					<!-- /.col-3 -->
+					<div class="col-6 col-sm-6 col-md-3 col-lg-3 col-xl-3">
+						<div class="clients-block">
+							<img class="clients-block__img" src="img/clients/client-4.png" alt="Client">
+						</div>
+						<!-- /.clients-block -->
+					</div>
+					<!-- /.col-3 -->
 				</div>
-				<!-- /.gallery-1 -->
+				<!-- /.row -->
 
-				<div class="spa-menu__blockrel">
-					<div class="spa-menu__rel spa-menu__rel2">
-						<div class="spa-menu__block">Инфракрасная сауна
-							<div class="spa-menu__arrow">&gt;</div>
+				<div class="row align-items-center">
+					<div class="col-6 col-sm-6 col-md-3 col-lg-3 col-xl-3">
+						<div class="clients-block">
+							<img class="clients-block__img" src="img/clients/client-5.png" alt="Client">
 						</div>
+						<!-- /.clients-block -->
 					</div>
-					<!-- /.spa-menu__rel2 -->
+					<!-- /.col-3 -->
+					<div class="col-6 col-sm-6 col-md-3 col-lg-3 col-xl-3">
+						<div class="clients-block">
+							<img class="clients-block__img" src="img/clients/client-6.png" alt="Client">
+						</div>
+						<!-- /.clients-block -->
+					</div>
+					<!-- /.col-3 -->
+					<div class="col-6 col-sm-6 col-md-3 col-lg-3 col-xl-3">
+						<div class="clients-block">
+							<img class="clients-block__img" src="img/clients/client-7.png" alt="Client">
+						</div>
+						<!-- /.clients-block -->
+					</div>
+					<!-- /.col-3 -->
+					<div class="col-6 col-sm-6 col-md-3 col-lg-3 col-xl-3">
+						<div class="clients-block">
+							<img class="clients-block__img" src="img/clients/client-8.png" alt="Client">
+						</div>
+						<!-- /.clients-block -->
+					</div>
+					<!-- /.col-3 -->
 				</div>
-				<!-- /.spa-menu__blockrel -->
+				<!-- /.row -->
 
-				<div class="gallery-2">
-					<div class="spa-gallery">
-						<div class="spa-gallery__big">
-							<img src="img/spa/image-2.jpg" alt="Спа">
+				<div class="row align-items-center">
+					<div class="col-6 col-sm-6 col-md-3 col-lg-3 col-xl-3">
+						<div class="clients-block">
+							<img class="clients-block__img" src="img/clients/client-9.png" alt="Client">
 						</div>
-						<!-- /.spa-gallery__one -->
-						<div class="spa-gallery__small">
-							<div class="spa-gallery__two">
-								<img src="img/spa/image-3.jpg" alt="Бассейн">
-							</div>
-							<!-- /.spa-gallery__two -->
-							<div class="spa-gallery__three">
-								<img src="img/spa/image-1.jpg" alt="Джакузи">
-							</div>
-							<!-- /.spa-gallery__three -->
-						</div>
-						<!-- /.spa-gallery__small -->
+						<!-- /.clients-block -->
 					</div>
-					<!-- /.spa-gallery -->
+					<!-- /.col-3 -->
+					<div class="col-6 col-sm-6 col-md-3 col-lg-3 col-xl-3">
+						<div class="clients-block">
+							<img class="clients-block__img" src="img/clients/client-10.png" alt="Client">
+						</div>
+						<!-- /.clients-block -->
+					</div>
+					<!-- /.col-3 -->
+					<div class="col-6 col-sm-6 col-md-3 col-lg-3 col-xl-3">
+						<div class="clients-block">
+							<img class="clients-block__img" src="img/clients/client-11.png" alt="Client">
+						</div>
+						<!-- /.clients-block -->
+					</div>
+					<!-- /.col-3 -->
+					<div class="col-6 col-sm-6 col-md-3 col-lg-3 col-xl-3">
+						<div class="clients-block">
+							<img class="clients-block__img" src="img/clients/client-12.png" alt="Client">
+						</div>
+						<!-- /.clients-block -->
+					</div>
+					<!-- /.col-3 -->
 				</div>
-				<!-- /.gallery-2 -->
-
-				<div class="spa-menu__blockrel">
-					<div class="spa-menu__rel spa-menu__rel3">
-						<div class="spa-menu__block">Сауна люкс
-							<div class="spa-menu__arrow">&gt;</div>
-						</div>
-					</div>
-					<!-- /.spa-menu__block -->
-				</div>
-				<!-- /.spa-menu__blockrel -->
-
-				<div class="gallery-3">
-					<div class="spa-gallery">
-						<div class="spa-gallery__big">
-							<img src="img/spa/image-3.jpg" alt="Спа">
-						</div>
-						<!-- /.spa-gallery__one -->
-						<div class="spa-gallery__small">
-							<div class="spa-gallery__two">
-								<img src="img/spa/image-1.jpg" alt="Бассейн">
-							</div>
-							<!-- /.spa-gallery__two -->
-							<div class="spa-gallery__three">
-								<img src="img/spa/image-2.jpg" alt="Джакузи">
-							</div>
-							<!-- /.spa-gallery__three -->
-						</div>
-						<!-- /.spa-gallery__small -->
-					</div>
-					<!-- /.spa-gallery -->
-				</div>
-				<!-- /.gallery-3 -->
-
-				<div class="spa-menu__blockrel">
-					<div class="spa-menu__rel spa-menu__rel4">
-						<div class="spa-menu__block">Массажный кабинет
-							<div class="spa-menu__arrow">&gt;</div>
-						</div>
-					</div>
-					<!-- /.spa-menu__block -->
-				</div>
-				<!-- /.spa-menu__blockrel -->
-
-				<div class="gallery-4">
-					<div class="spa-gallery">
-						<div class="spa-gallery__big">
-							<img src="img/spa/image-1.jpg" alt="Спа">
-						</div>
-						<!-- /.spa-gallery__one -->
-						<div class="spa-gallery__small">
-							<div class="spa-gallery__two">
-								<img src="img/spa/image-1.jpg" alt="Бассейн">
-							</div>
-							<!-- /.spa-gallery__two -->
-							<div class="spa-gallery__three">
-								<img src="img/spa/image-2.jpg" alt="Джакузи">
-							</div>
-							<!-- /.spa-gallery__three -->
-						</div>
-						<!-- /.spa-gallery__small -->
-					</div>
-					<!-- /.spa-gallery -->
-				</div>
-				<!-- /.gallery-4 -->
-
-				<div class="spa-menu__blockrel">
-					<div class="spa-menu__rel spa-menu__rel5">
-						<div class="spa-menu__block">Кислородная борокамера
-							<div class="spa-menu__arrow">&gt;</div>
-						</div>
-					</div>
-					<!-- /.spa-menu__block -->
-				</div>
-				<!-- /.spa-menu__blockrel -->
-
-				<div class="gallery-5">
-					<div class="spa-gallery">
-						<div class="spa-gallery__big">
-							<img src="img/spa/image-2.jpg" alt="Спа">
-						</div>
-						<!-- /.spa-gallery__one -->
-						<div class="spa-gallery__small">
-							<div class="spa-gallery__two">
-								<img src="img/spa/image-2.jpg" alt="Бассейн">
-							</div>
-							<!-- /.spa-gallery__two -->
-							<div class="spa-gallery__three">
-								<img src="img/spa/image-3.jpg" alt="Джакузи">
-							</div>
-							<!-- /.spa-gallery__three -->
-						</div>
-						<!-- /.spa-gallery__small -->
-					</div>
-					<!-- /.spa-gallery -->
-				</div>
-				<!-- /.gallery-5 -->
-
-				<div class="spa-menu__blockrel">
-					<div class="spa-menu__rel spa-menu__rel6">
-						<div class="spa-menu__block">Сауна стандарт
-							<div class="spa-menu__arrow">&gt;</div>
-						</div>
-					</div>
-					<!-- /.spa-menu__block -->
-				</div>
-				<!-- /.spa-menu__blockrel -->
-
-				<div class="gallery-6">
-					<div class="spa-gallery">
-						<div class="spa-gallery__big">
-							<img src="img/spa/image-3.jpg" alt="Спа">
-						</div>
-						<!-- /.spa-gallery__one -->
-						<div class="spa-gallery__small">
-							<div class="spa-gallery__two">
-								<img src="img/spa/image-3.jpg" alt="Бассейн">
-							</div>
-							<!-- /.spa-gallery__two -->
-							<div class="spa-gallery__three">
-								<img src="img/spa/image-1.jpg" alt="Джакузи">
-							</div>
-							<!-- /.spa-gallery__three -->
-						</div>
-						<!-- /.spa-gallery__small -->
-					</div>
-					<!-- /.spa-gallery -->
-				</div>
-				<!-- /.gallery-6 -->
-
-				<div class="spa-menu__blockrel">
-					<div class="spa-menu__rel spa-menu__rel7">
-						<div class="spa-menu__block">Фитнес бар
-							<div class="spa-menu__arrow">&gt;</div>
-						</div>
-					</div>
-					<!-- /.spa-menu__block -->
-					</div>
-				<!-- /.spa-menu__blockrel -->
-
-				<div class="gallery-7">
-					<div class="spa-gallery">
-						<div class="spa-gallery__big">
-							<img src="img/spa/image-1.jpg" alt="Спа">
-						</div>
-						<!-- /.spa-gallery__one -->
-						<div class="spa-gallery__small">
-							<div class="spa-gallery__two">
-								<img src="img/spa/image-1.jpg" alt="Бассейн">
-							</div>
-							<!-- /.spa-gallery__two -->
-							<div class="spa-gallery__three">
-								<img src="img/spa/image-1.jpg" alt="Джакузи">
-							</div>
-							<!-- /.spa-gallery__three -->
-						</div>
-						<!-- /.spa-gallery__small -->
-					</div>
-					<!-- /.spa-gallery -->
-				</div>
-				<!-- /.gallery-7 -->
+				<!-- /.row -->
 
 			</div>
-			<!-- /.spa-menu -->
+			<!-- /.container -->
 		</section>
-		<!-- /.spa -->
+		<!-- /.clients -->
 
-		<section class="test">
-			<div class="test-title">
-				Протестируйте
-			</div>
-			<!-- /.test-title -->
-			<div class="test-block">
-				<div class="test-block__text"><span>7</span><br>дней</div>
-				<!-- /.test-block__text -->
-				<div class="test-block__text"><span>3500</span><br>рублей</div>
-				<!-- /.test-block__text -->
-				<div class="test-block__text">Неограниченное<br>посещение</div>
-				<!-- /.test-block__text -->
-				<div class="test-block__form">
-					<input type="text" class="test-block__input" placeholder="Ваш телефон" id="phone" required>
-					<button class="test-block__button">Протестировать</button>
+
+		<section class="feedback" id="reviews">
+			<div class="container" id="certificates">
+				<h2 class="section-title feedback-title">
+					Отзывы о сотрудничестве
+				</h2>
+				<!-- /.section-title -->
+				<div class="feedback-slider">
+					<div class="feedback-slider__item"><img src="img/feedback/1.png" alt=""></div>
+					<!-- /.feedback-slider__item -->
+					<div class="feedback-slider__item"><img src="img/feedback/2.png" alt=""></div>
+					<!-- /.feedback-slider__item -->
+					<div class="feedback-slider__item"><img src="img/feedback/3.png" alt=""></div>
+					<!-- /.feedback-slider__item -->
+					<div class="feedback-slider__item"><img src="img/feedback/1.png" alt=""></div>
+					<!-- /.feedback-slider__item -->
+					<div class="feedback-slider__item"><img src="img/feedback/2.png" alt=""></div>
+					<!-- /.feedback-slider__item -->
+					<div class="feedback-slider__item"><img src="img/feedback/3.png" alt=""></div>
+					<!-- /.feedback-slider__item -->
 				</div>
-				<!-- /.test-block__form -->
+				<!-- /.feedback-slider -->
 			</div>
-			<!-- /.test-block -->
+			<!-- /.container -->
 		</section>
-		<!-- /.test -->
-		
-		<div class="map-block" id="map"></div>
-		<!-- /.map-block -->
+		<!-- /.feedback -->
 
-		<footer class="footer">
-			<div class="footer-blocks">
-				<div class="footer-block__one">
-					<a href="index.html" class="footer-block__logorel">
-						<div class="footer-block__logo">
-							<img src="img/footer/logo.png" alt="Фитнесс-центр Нептун" class="footer-block__pic">
-						</div>
-						<!-- /.footer-block__logo -->
-					</a>
-					<div class="footer-block__phones">+7 (812) 324-46-96<br> +7 (921) 320-26-12</div>
-					<!-- /.footer-block__phones -->
-					<div class="footer-block__address">Санкт-Петербург, МДЦ Нептун наб. Обводного канала, 93-а</div>
-					<!-- /.footer-block__address -->
-					<a href="" class="footer-block__vk">Вконтакте</a>
+		<div class="contacts" id="contacts">
+			<div class="contacts-map-text">
+				<div class="contacts-block">
+				<div class="contacts-block__table">Контакты</div>
+				<!-- /.contacts-block__table -->
+				<div class="contacts-block__address">
+					<span class="contacts-block__title">Адрес офиса</span>
+					г. Уфа, Проспект октября, 46
+					<span class="contacts-block__title">Адрес склада</span>
+					г. Уфа, ул. Майкопская, 65/2
 				</div>
-				<!-- /.footer-block__one -->
-				<div class="footer-block__two">
-					<a href="" class="footer-block__rel">Тренажерный зал</a>
-					<a href="" class="footer-block__rel">Аэробный зал</a>
-					<a href="" class="footer-block__rel">Бассейн</a>
-					<a href="" class="footer-block__rel"><span>Взрослый бассейн</span></a>
-					<a href="" class="footer-block__rel"><span>Детский бассейн</span></a>
-					<a href="" class="footer-block__rel">Сквош</a>
-					<a href="" class="footer-block__rel">Теннис</a>
+				<!-- /.contacts-block__address -->
+				<div class="contacts-block__phone">
+					<span class="contacts-block__title">Тел. отдела продаж:</span>
+					8 (347) 271-54-28 <br>
+					8 (937) 363-30-00
 				</div>
-				<!-- /.footer-block__two -->
-				<div class="footer-block__three">
-					<a href="" class="footer-block__rel">Настольный теннис</a>
-					<a href="" class="footer-block__rel">Зал единоборств</a>
-					<a href="" class="footer-block__rel">Spa и другие услуги</a>
-					<a href="" class="footer-block__rel"><span>Турецкая сауна</span></a>
-					<a href="" class="footer-block__rel"><span>Инфракрасная сауна</span></a>
-					<a href="" class="footer-block__rel"><span>Массажный кабинет</span></a>
-					<a href="" class="footer-block__rel"><span>Кислородная борокамера</span></a>
-					<a href="" class="footer-block__rel"><span>Сауна стандарт</span></a>
-					<a href="" class="footer-block__rel"><span>Фитнес бар</span></a>
+				<!-- /.contacts-block__phone -->
+				<div class="contacts-block__cta">
+					<button class="button contacts-block__button">Заказать звонок</button>
 				</div>
-				<!-- /.footer-block__three -->
-				<div class="footer-block__for">
-					<a href="" class="footer-block__rel">О клубе</a>
-					<a href="" class="footer-block__rel">Клубные карты</a>
-					<a href="" class="footer-block__rel">Расписание</a>
-					<a href="" class="footer-block__rel">Новости</a>
-					<a href="" class="footer-block__rel">Акции</a>
-					<a href="" class="footer-block__rel">Контакты</a>
-					<a href="" class="footer-block__mapclub">
-						<div class="footer-block__inmap">Схема клуба</div>
-						<!-- /.footer-company__inmap -->
-					</a>
+				<!-- /.contact-block__cta -->
+				<div class="contacts-block__mail">
+					<span class="contacts-block__title">Е-mail</span>
+					urals.karton@gmail.com
 				</div>
-				<!-- /.footer-block__for -->
 			</div>
-			<!-- /.footer-blocks -->
-			<div class="footer-copyright">
-				МДЦ “Нептун” © 2017
+			<!-- /.block-section -->
 			</div>
-			<!-- /.footer-copyright -->
-			<div class="footer-studio">
-				<a href="" class="">Создание сайта - веб студия интернет-агентства “Волекс”</a>
-			</div>
-			<!-- /.footer-studio -->
-		</footer>
-		<!-- /.footer -->
-	
-	<script src="js/jquery-1.7.2.min.js"></script>
-	<!-- Яндекс-карта на сайте -->
-	<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU">
-	</script>
-	<script>
-  ymaps.ready(init);
-    var myMap,
-        myPlacemark;
+			<!-- /.contacts-map-text -->
+			<div id="map" class="map"></div>
+		</div>
+		<!-- /.contacts -->
 
-    function init(){     
-        myMap = new ymaps.Map("map", {
-            center: [59.916292, 30.339447],
-            zoom: 17,
-            controls: ['zoomControl']
-        });
-
-        myPlacemark = new ymaps.Placemark([59.916094, 30.339108], { 
-            hintContent: 'Фитнесс-центр "Нептун"', 
-            balloonContent: 'Фитнесс-центр "Нептун"<br>Проехать вы можете:<br>Автобус №1, Автобус №2, Автобус №3.<br>Троллейбус №1, Троллейбус №2, Троллейбус №3.<br>Маршрутка №1, Маршрутка №2, Маршрутка №3.<br>Время работы: <br>Понедельник-Пятница: 08:00 - 21:00<br>Суббота-Воскресенье: 10:00 - 20:00'
-          }, {
-            preset: 'islands#redDotIcon'
-        });
-
-        myMap.geoObjects.add(myPlacemark);
-        myMap.behaviors.disable('scrollZoom');
-    }
-	</script>
+		<div class="down">
+				<div class="down-text" >&#169;Все права защищены</div>
+		</div>
+		<!-- /.down -->
 			
-	<!-- Подключение плавной прокрутки -->
-	<script>
-		$('a[href^="#"]').click(function (){
-		var target = $(this).attr('href');
-		$('html, body').animate({scrollTop: $(target).offset().top - 50 }, 1200);
-		return false;
-		});
-	</script>
+
+		
+		<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
+		<!-- Yandex.Metrika counter --> <script> (function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter47946908 = new Ya.Metrika({ id:47946908, clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true, trackHash:true }); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = "https://cdn.jsdelivr.net/npm/yandex-metrica-watch/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks"); </script> <noscript><div><img src="https://mc.yandex.ru/watch/47946908" style="position:absolute; left:-9999px;" alt="" /></div></noscript> <!-- /Yandex.Metrika counter -->
+
+
+		<script src="https://code.jquery.com/jquery-3.2.1.slim.js"
+    integrity="sha256-tA8y0XqiwnpwmOIl3SGAcFl2RvxHjA8qp0+1uCGmRmg="
+    crossorigin="anonymous"></script>
+		<script>window.jQuery || document.write('<script src="js/jquery-3.3.1.slim.min.js"><\/script>')</script>
+
+
+		<!-- Модальное окно -->
+		<script>
+
+			$(document).ready(function(){
+
+				$('.products-block__button').on("click", function(){
+					$('.overlay').show();
+				});
+
+				$('.popup-close').on("click", function(){
+					$('.overlay').hide();
+				});
+			});
+
+
+		</script>
+
+		<script>
+
+			$(document).ready(function(){
+
+				$('.header-contacts__button').on("click", function(){
+					$('.overlay').show();
+				});
+
+				$('.popup-close').on("click", function(){
+					$('.overlay').hide();
+				});
+			});
+
+
+		</script>
+
+		<script>
+
+			$(document).ready(function(){
+
+				$('.contacts-block__button').on("click", function(){
+					$('.overlay').show();
+				});
+
+				$('.popup-close').on("click", function(){
+					$('.overlay').hide();
+				});
+			});
+
+
+		</script>
+
+
+		<!-- Модальное окно благодарности -->
+		<script>
+
+			$(document).ready(function(){
+
+				$('down-text').on("click", function(){
+					$('.phankyou').show();
+				});
+
+				$('.phankyou-popup__close').on("click", function(){
+					$('.phankyou').hide();
+				});
+			});
+
+		</script>
 	
-	<!-- Слайдер -->
-	<script src="js/jquery-1.7.2.min.js"></script>
-	<script src="slick/slick.min.js"></script>
-	<script>
+		<!-- Подключение слайдера -->
+		<script src="slick/slick.min.js"></script>
+		<script>
 			$('.main-slider').slick({
 				slidesToShow: 1,
         slidesToScroll: 1,
+        prevArrow: '<div class="slider-main slider-main_right"></div>',
+				nextArrow: '<div class="slider-main slider-main_left"></div>',
         arrows: true,
-        prevArrow: '<div class="slider-main slider-main_left"></div>',
-				nextArrow: '<div class="slider-main slider-main_right"></div>',
         infinite: true,
-        dots: true,
+        dots: false,
         autoplay: true,
         autoplaySpeed: 9000,
         pauseOnHover: false,
@@ -663,91 +827,351 @@
         cssEase: 'linear',
         speed: 1000
 			});
- 	</script>
-	
-	<script src="js/jquery-1.7.2.min.js"></script>
- 	<script>
-
-			$(document).ready(function(){
-
-				$('.header-company__button').on("click", function(){
-					$('.window').show();
-				});
-
-				$('.window-offer__close').on("click", function(){
-					$('.window').hide();
-				});
-
-				$('.spa-menu__rel1').on("click", function(){
-					$('.gallery-1').toggle();
-					$('.gallery-2, .gallery-3, .gallery-4, .gallery-5, .gallery-6, .gallery-7').hide();
-				});
-
-				$('.spa-menu__rel2').on("click", function(){
-					$('.gallery-2').toggle();
-					$('.gallery-1, .gallery-3, .gallery-4, .gallery-5, .gallery-6, .gallery-7').hide();
-				});
-				$('.spa-menu__rel3').on("click", function(){
-					$('.gallery-3').toggle();
-					$('.gallery-2, .gallery-1, .gallery-4, .gallery-5, .gallery-6, .gallery-7').hide();
-				});
-				$('.spa-menu__rel4').on("click", function(){
-					$('.gallery-4').toggle();
-					$('.gallery-2, .gallery-3, .gallery-1, .gallery-5, .gallery-6, .gallery-7').hide();
-				});
-				$('.spa-menu__rel5').on("click", function(){
-					$('.gallery-5').toggle();
-					$('.gallery-2, .gallery-3, .gallery-4, .gallery-1, .gallery-6, .gallery-7').hide();
-				});
-				$('.spa-menu__rel6').on("click", function(){
-					$('.gallery-6').toggle();
-					$('.gallery-2, .gallery-3, .gallery-4, .gallery-5, .gallery-1, .gallery-7').hide();
-				});
-				$('.spa-menu__rel7').on("click", function(){
-					$('.gallery-7').toggle();
-					$('.gallery-2, .gallery-3, .gallery-4, .gallery-5, .gallery-6, .gallery-1').hide();
-				});
-
-				$('.header-features__menu').on("click", function(){
-					$('.header-features__blocks').toggle();
-				});
-				$('.header-menu__mobmenu').on("click", function(){
-					$('.header-menu__mobile').toggle();
-				});
+			$('.production-slider_top').slick({
+				arrows: false,
+				slidesToShow: 1,
+				slidesToScroll: 1,
+				asNavFor: '.production-slider_bottom'
 			});
- 	</script>
-	
-	<!-- Подключение маски -->
- 	<script src="js/jquery-1.7.2.min.js"></script>
-	<script src="js/jquery.maskedinput.min.js"></script>
-	<script>
-		jQuery(function($){
-			$("#phone").mask("+7 (999) 999-99-99");
+			$('.production-slider_bottom').slick({
+				arrows: true,
+				slidesToShow: 4,
+				slidesToScroll: 1,
+			  responsive: [
+			    {
+			      breakpoint: 576,
+			      settings: {
+			        slidesToShow: 1,
+			        slidesToScroll: 1,
+			      }
+			    },
+			    {
+			      breakpoint: 768,
+			      settings: {
+			        slidesToShow: 1,
+			        slidesToScroll: 1,
+			      }
+			    }
+			  ],
+				prevArrow: '<div class="slider-arrow slider-arrow_left"></div>',
+				nextArrow: '<div class="slider-arrow slider-arrow_right"></div>',
+				asNavFor: '.production-slider_top',
+  			focusOnSelect: true
+			});
+			$('.feedback-slider').slick({
+			slidesToShow: 3,
+			slidesToScroll: 1,
+			responsive: [
+					{
+			      breakpoint: 768,
+			      settings: {
+			        slidesToShow: 2,
+			        slidesToScroll: 1
+			    }
+			    },
+			    {
+			      breakpoint: 576,
+			      settings: {
+			        slidesToShow: 2,
+			        slidesToScroll: 1
+			      }
+			    },
+			    {
+			      breakpoint: 400,
+			      settings: {
+			        slidesToShow: 1,
+			        slidesToScroll: 1
+			      }
+			    }
+			  ],
+			prevArrow: '<div class="slider-feed slider-feed_right"></div>',
+			nextArrow: '<div class="slider-feed slider-feed_left"></div>'
+			});
+		</script>
+		<script src="js/wow.min.js"></script>
+		<script>
+			new WOW().init();
+		</script>
+
+
+
+				
+		<!-- Подключение плавной прокрутки -->
+		<script>
+			$('a[href^="#"]').click(function (){
+			var target = $(this).attr('href');
+			$('html, body').animate({scrollTop: $(target).offset().top - 50 }, 1200);
+			return false;
+			});
+		</script>
+		<script>
+			ymaps.ready(function () {
+    var myMap = new ymaps.Map('map', {
+            center: [54.752656, 56.002053],
+            zoom: 17,
+            controls: ['zoomControl']
+        }, {
+            searchControlProvider: 'yandex#search'
+        }),
+
+        // Создаём макет содержимого.
+        MyIconContentLayout = ymaps.templateLayoutFactory.createClass(
+            '<div style="color: #FFFFFF; font-weight: bold;">$[properties.iconContent]</div>'
+        ),
+
+
+        myPlacemark = new ymaps.Placemark(myMap.getCenter(), {
+            hintContent: 'Офис Доброго картона',
+            balloonContent: 'Добрый картон'
+        }, {
+            // Опции.
+            // Необходимо указать данный тип макета.
+            iconLayout: 'default#image',
+            // Своё изображение иконки метки.
+            iconImageHref: 'img/contacts/map-icon.png',
+            // Размеры метки.
+            iconImageSize: [40, 40],
+            // Смещение левого верхнего угла иконки относительно
+            // её "ножки" (точки привязки).
+            iconImageOffset: [-20, -45]
+        });
+
+
+    myMap.geoObjects
+        .add(myPlacemark);
+    myMap.behaviors.disable('scrollZoom');
+    });
+		</script>
+
+		<!-- Отправка формы на почту для main -->
+		<script src="js/jquery-1.7.2.min.js"></script>
+		<script>
+$(document).ready(function() { // вся мaгия пoслe зaгрузки стрaницы
+	$("#ajaxform").submit(function(){ // пeрeхвaтывaeм всe при сoбытии oтпрaвки
+		var form = $(this); // зaпишeм фoрму, чтoбы пoтoм нe былo прoблeм с this
+		var error = false; // прeдвaритeльнo oшибoк нeт
+		form.find('input, textarea').each( function(){ // прoбeжим пo кaждoму пoлю в фoрмe
+			if ($(this).val() == '') { // eсли нaхoдим пустoe
+				alert('Зaпoлнитe пoлe "'+$(this).attr('placeholder')+'"!'); // гoвoрим зaпoлняй!
+				error = true; // oшибкa
+			}
 		});
-	</script>
+		if (!error) { // eсли oшибки нeт
+			var data = form.serialize(); // пoдгoтaвливaeм дaнныe
+			$.ajax({ // инициaлизируeм ajax зaпрoс
+			   type: 'POST', // oтпрaвляeм в POST фoрмaтe, мoжнo GET
+			   url: 'mailer/smart.php', // путь дo oбрaбoтчикa, у нaс oн лeжит в тoй жe пaпкe
+			   dataType: 'html', // oтвeт ждeм в json фoрмaтe
+			   data: data, // дaнныe для oтпрaвки
+		       beforeSend: function(data) { // сoбытиe дo oтпрaвки
+		            form.find('input[type="submit"]').attr('disabled', 'disabled'); // нaпримeр, oтключим кнoпку, чтoбы нe жaли пo 100 рaз
+		          },
+		       success: function(data){ // сoбытиe пoслe удaчнoгo oбрaщeния к сeрвeру и пoлучeния oтвeтa
+		       		if (data['error']) { // eсли oбрaбoтчик вeрнул oшибку
+		       			alert(data['error']); // пoкaжeм eё тeкст
+		       		} else { // eсли всe прoшлo oк
+		       			$('.phankyou').show();
+		       		}
+		         },
+		       error: function (xhr, ajaxOptions, thrownError) { // в случae нeудaчнoгo зaвeршeния зaпрoсa к сeрвeру
+		            alert(xhr.status); // пoкaжeм oтвeт сeрвeрa
+		            alert(thrownError); // и тeкст oшибки
+		         },
+		       complete: function(data) { // сoбытиe пoслe любoгo исхoдa
+		            form.find('input[type="submit"]').prop('disabled', false);
+		            $('#ajaxform').trigger( 'reset' ); // в любoм случae включим кнoпку oбрaтнo
+		         }
+		                  
+			     });
+		}
+		return false; // вырубaeм стaндaртную oтпрaвку фoрмы
+	});
+});
+</script>
+		
+		<!-- Отправка формы на почту для main -->
+		<script src="js/jquery-1.7.2.min.js"></script>
+		<script>
+$(document).ready(function() { // вся мaгия пoслe зaгрузки стрaницы
+	$("#twoajaxform").submit(function(){ // пeрeхвaтывaeм всe при сoбытии oтпрaвки
+		var form = $(this); // зaпишeм фoрму, чтoбы пoтoм нe былo прoблeм с this
+		var error = false; // прeдвaритeльнo oшибoк нeт
+		form.find('input, textarea').each( function(){ // прoбeжим пo кaждoму пoлю в фoрмe
+			if ($(this).val() == '') { // eсли нaхoдим пустoe
+				alert('Зaпoлнитe пoлe "'+$(this).attr('placeholder')+'"!'); // гoвoрим зaпoлняй!
+				error = true; // oшибкa
+			}
+		});
+		if (!error) { // eсли oшибки нeт
+			var data = form.serialize(); // пoдгoтaвливaeм дaнныe
+			$.ajax({ // инициaлизируeм ajax зaпрoс
+			   type: 'POST', // oтпрaвляeм в POST фoрмaтe, мoжнo GET
+			   url: 'mailer/smart.php', // путь дo oбрaбoтчикa, у нaс oн лeжит в тoй жe пaпкe
+			   dataType: 'html', // oтвeт ждeм в json фoрмaтe
+			   data: data, // дaнныe для oтпрaвки
+		       beforeSend: function(data) { // сoбытиe дo oтпрaвки
+		            form.find('input[type="submit"]').attr('disabled', 'disabled'); // нaпримeр, oтключим кнoпку, чтoбы нe жaли пo 100 рaз
+		          },
+		       success: function(data){ // сoбытиe пoслe удaчнoгo oбрaщeния к сeрвeру и пoлучeния oтвeтa
+		       		if (data['error']) { // eсли oбрaбoтчик вeрнул oшибку
+		       			alert(data['error']); // пoкaжeм eё тeкст
+		       		} else { // eсли всe прoшлo oк
+		       			$('.phankyou').show();
+		       		}
+		         },
+		       error: function (xhr, ajaxOptions, thrownError) { // в случae нeудaчнoгo зaвeршeния зaпрoсa к сeрвeру
+		            alert(xhr.status); // пoкaжeм oтвeт сeрвeрa
+		            alert(thrownError); // и тeкст oшибки
+		         },
+		       complete: function(data) { // сoбытиe пoслe любoгo исхoдa
+		            form.find('input[type="submit"]').prop('disabled', false);
+		            $('#twoajaxform').trigger( 'reset' ); // в любoм случae включим кнoпку oбрaтнo
+		         }          
+			     });
+		}
+		return false; // вырубaeм стaндaртную oтпрaвку фoрмы
+	});
+});
+</script>
 
-	<!-- Подключение кнопки ВВЕРХ -->
-			<script src="js/jquery-1.7.2.min.js"></script>
-	    <!-- easing plugin ( optional ) -->
-	    <script src="js/easing.js"></script>
-	    <!-- UItoTop plugin -->
-	    <script src="js/jquery.ui.totop.js"></script>
-	    <!-- Starting the plugin -->
-	    <script>
-	    $(document).ready(function() {
 
-	    var defaults = {
-	    containerID: 'toTop', // fading element id
-	    containerHoverID: 'toTopHover', // fading element hover id
-	    scrollSpeed: 1200,
-	    easingType: 'linear'
-	    };
+<!-- Отправка формы на почту для offer -->
+<script src="js/jquery-1.7.2.min.js"></script>
+		<script>
+$(document).ready(function() { // вся мaгия пoслe зaгрузки стрaницы
+	$("#offerform").submit(function(){ // пeрeхвaтывaeм всe при сoбытии oтпрaвки
+		var form = $(this); // зaпишeм фoрму, чтoбы пoтoм нe былo прoблeм с this
+		var error = false; // прeдвaритeльнo oшибoк нeт
+		form.find('input, textarea').each( function(){ // прoбeжим пo кaждoму пoлю в фoрмe
+			if ($(this).val() == '') { // eсли нaхoдим пустoe
+				alert('Зaпoлнитe пoлe "'+$(this).attr('placeholder')+'"!'); // гoвoрим зaпoлняй!
+				error = true; // oшибкa
+			}
+		});
+		if (!error) { // eсли oшибки нeт
+			var data = form.serialize(); // пoдгoтaвливaeм дaнныe
+			$.ajax({ // инициaлизируeм ajax зaпрoс
+			   type: 'POST', // oтпрaвляeм в POST фoрмaтe, мoжнo GET
+			   url: 'mailer/smart.php', // путь дo oбрaбoтчикa, у нaс oн лeжит в тoй жe пaпкe
+			   dataType: 'html', // oтвeт ждeм в json фoрмaтe
+			   data: data, // дaнныe для oтпрaвки
+		       beforeSend: function(data) { // сoбытиe дo oтпрaвки
+		            form.find('input[type="submit"]').attr('disabled', 'disabled'); // нaпримeр, oтключим кнoпку, чтoбы нe жaли пo 100 рaз
+		          },
+		       success: function(data){ // сoбытиe пoслe удaчнoгo oбрaщeния к сeрвeру и пoлучeния oтвeтa
+		       		if (data['error']) { // eсли oбрaбoтчик вeрнул oшибку
+		       			alert(data['error']); // пoкaжeм eё тeкст
+		       		} else { // eсли всe прoшлo oк
+		       			$('.phankyou').show();
+		       		}
+		         },
+		       error: function (xhr, ajaxOptions, thrownError) { // в случae нeудaчнoгo зaвeршeния зaпрoсa к сeрвeру
+		            alert(xhr.status); // пoкaжeм oтвeт сeрвeрa
+		            alert(thrownError); // и тeкст oшибки
+		         },
+		       complete: function(data) { // сoбытиe пoслe любoгo исхoдa
+		            form.find('input[type="submit"]').prop('disabled', false);
+		            $('#offerform').trigger( 'reset' ); // в любoм случae включим кнoпку oбрaтнo
+		         }
+		                  
+			     });
+		}
+		return false; // вырубaeм стaндaртную oтпрaвку фoрмы
+	});
+});
+</script>
 
-	     
-	    $().UItoTop({ easingType: 'easeOutQuart' });
-	     
-	    });
-	    </script>
-	    <script src='https://www.google.com/recaptcha/api.js'></script>
+
+<!-- Отправка формы на почту для popup -->
+<script src="js/jquery-1.7.2.min.js"></script>
+		<script>
+$(document).ready(function() { // вся мaгия пoслe зaгрузки стрaницы
+	$("#popupform").submit(function(){ // пeрeхвaтывaeм всe при сoбытии oтпрaвки
+		var form = $(this); // зaпишeм фoрму, чтoбы пoтoм нe былo прoблeм с this
+		var error = false; // прeдвaритeльнo oшибoк нeт
+		form.find('input, textarea').each( function(){ // прoбeжим пo кaждoму пoлю в фoрмe
+			if ($(this).val() == '') { // eсли нaхoдим пустoe
+				alert('Зaпoлнитe пoлe "'+$(this).attr('placeholder')+'"!'); // гoвoрим зaпoлняй!
+				error = true; // oшибкa
+			}
+		});
+		if (!error) { // eсли oшибки нeт
+			var data = form.serialize(); // пoдгoтaвливaeм дaнныe
+			$.ajax({ // инициaлизируeм ajax зaпрoс
+			   type: 'POST', // oтпрaвляeм в POST фoрмaтe, мoжнo GET
+			   url: 'mailer/smart.php', // путь дo oбрaбoтчикa, у нaс oн лeжит в тoй жe пaпкe
+			   dataType: 'html', // oтвeт ждeм в json фoрмaтe
+			   data: data, // дaнныe для oтпрaвки
+		       beforeSend: function(data) { // сoбытиe дo oтпрaвки
+		            form.find('input[type="submit"]').attr('disabled', 'disabled'); // нaпримeр, oтключим кнoпку, чтoбы нe жaли пo 100 рaз
+		          },
+		       success: function(data){ // сoбытиe пoслe удaчнoгo oбрaщeния к сeрвeру и пoлучeния oтвeтa
+		       		if (data['error']) { // eсли oбрaбoтчик вeрнул oшибку
+		       			alert(data['error']); // пoкaжeм eё тeкст
+		       		} else { // eсли всe прoшлo oк
+		       			$('.overlay').hide();
+		       			$('.phankyou').show();
+		       		}
+		         },
+		       error: function (xhr, ajaxOptions, thrownError) { // в случae нeудaчнoгo зaвeршeния зaпрoсa к сeрвeру
+		            alert(xhr.status); // пoкaжeм oтвeт сeрвeрa
+		            alert(thrownError); // и тeкст oшибки
+		         },
+		       complete: function(data) { // сoбытиe пoслe любoгo исхoдa
+		            form.find('input[type="submit"]').prop('disabled', false);
+		            $('#popupform').trigger( 'reset' ); // в любoм случae включим кнoпку oбрaтнo
+		         }
+		                  
+			     });
+		}
+		return false; // вырубaeм стaндaртную oтпрaвку фoрмы
+	});
+});
+</script>
+
+<script src="js/jquery-1.7.2.min.js"></script>
+<script src="js/jquery.maskedinput.min.js"></script>
+<script>
+	jQuery(function($){
+		$("#phone").mask("+7 (999) 999-99-99");
+	});
+</script>
+<script>
+	jQuery(function($){
+		$("#phone2").mask("+7 (999) 999-99-99");
+	});
+</script>
+<script>
+	jQuery(function($){
+		$("#phone3").mask("+7 (999) 999-99-99");
+	});
+</script>
+<script>
+	jQuery(function($){
+		$("#phone4").mask("+7 (999) 999-99-99");
+	});
+</script>
+		<!-- Подключение кнопки ВВЕРХ -->
+		<script src="js/jquery-1.7.2.min.js"></script>
+    <!-- easing plugin ( optional ) -->
+    <script src="js/easing.js"></script>
+    <!-- UItoTop plugin -->
+    <script src="js/jquery.ui.totop.js"></script>
+    <!-- Starting the plugin -->
+    <script>
+    $(document).ready(function() {
+
+    var defaults = {
+    containerID: 'toTop', // fading element id
+    containerHoverID: 'toTopHover', // fading element hover id
+    scrollSpeed: 1200,
+    easingType: 'linear'
+    };
+
+     
+    $().UItoTop({ easingType: 'easeOutQuart' });
+     
+    });
+    </script>
 	</body>
 </html>
